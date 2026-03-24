@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { genres, quizBank } from "./data";
 
-const QUESTION_TIME = 25;
 const RAG_DELAY = 1800;
 
 function buildInitialState(genreId = genres[0].id) {
@@ -14,7 +13,6 @@ function buildInitialState(genreId = genres[0].id) {
     answers: [],
     isRevealed: false,
     isRagLoading: false,
-    timer: QUESTION_TIME,
     quizComplete: false,
     insight: null,
   };
@@ -25,22 +23,6 @@ export function useQuiz() {
   const timeoutRef = useRef(null);
 
   const currentQuestion = state.questions[state.currentIndex];
-
-  useEffect(() => {
-    if (state.quizComplete || state.isRevealed) return undefined;
-
-    const interval = window.setInterval(() => {
-      setState((prev) => {
-        if (prev.timer <= 1) {
-          return { ...prev, timer: 0, isRevealed: true, isRagLoading: true };
-        }
-
-        return { ...prev, timer: prev.timer - 1 };
-      });
-    }, 1000);
-
-    return () => window.clearInterval(interval);
-  }, [state.quizComplete, state.isRevealed]);
 
   useEffect(() => {
     if (!state.isRagLoading) return undefined;
@@ -69,7 +51,6 @@ export function useQuiz() {
               selected: prev.selectedOption || "No answer",
               correct: question.answer,
               isCorrect,
-              timeSpent: QUESTION_TIME - prev.timer,
             },
           ],
         };
@@ -108,7 +89,6 @@ export function useQuiz() {
             selectedOption: "",
             isRevealed: false,
             isRagLoading: false,
-            timer: QUESTION_TIME,
             insight: null,
           };
         });

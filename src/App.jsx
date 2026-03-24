@@ -1,4 +1,3 @@
-import { lazy, Suspense } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   BookOpenText,
@@ -6,14 +5,13 @@ import {
   CheckCircle2,
   ChevronRight,
   CircleGauge,
+  Layers3,
   LibraryBig,
   LoaderCircle,
-  TimerReset,
+  Sparkles,
 } from "lucide-react";
-import { genres, platformStats } from "./data";
+import { genres } from "./data";
 import { useQuiz } from "./useQuiz";
-
-const AnalyticsPanels = lazy(() => import("./AnalyticsPanels"));
 
 const shellMotion = {
   hidden: { opacity: 0, y: 24 },
@@ -67,27 +65,6 @@ function ShimmerInsight() {
         <div className="grid gap-3 sm:grid-cols-2">
           <div className="h-20 rounded-2xl bg-white/8" />
           <div className="h-20 rounded-2xl bg-white/8" />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function AnalyticsSkeleton() {
-  return (
-    <div className="grid gap-6">
-      <div className="rounded-[32px] border border-white/10 bg-white/[0.04] p-5 backdrop-blur-2xl sm:p-6">
-        <div className="animate-pulse space-y-4">
-          <div className="h-4 w-40 rounded-full bg-white/10" />
-          <div className="h-10 w-72 rounded-full bg-white/10" />
-          <div className="h-72 rounded-[28px] bg-white/6" />
-        </div>
-      </div>
-      <div className="rounded-[32px] border border-white/10 bg-white/[0.04] p-5 backdrop-blur-2xl sm:p-6">
-        <div className="animate-pulse space-y-4">
-          <div className="h-4 w-48 rounded-full bg-white/10" />
-          <div className="h-10 w-80 rounded-full bg-white/10" />
-          <div className="h-80 rounded-[28px] bg-white/6" />
         </div>
       </div>
     </div>
@@ -226,73 +203,71 @@ function App() {
           className="overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.04] p-6 backdrop-blur-2xl sm:p-8"
         >
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-2xl">
+            <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-indigo-500/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-indigo-200">
                 <LibraryBig className="h-4 w-4" />
                 RAG-Powered Intelligent Quiz Platform
               </div>
               <h1 className="mt-5 font-['Geist'] text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                Quiz flows that explain themselves.
+                Start with the domain. Let the quiz adapt around it.
               </h1>
               <p className="mt-4 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
-                A glassmorphic assessment workspace combining adaptive quizzes, grounded AI explanations,
-                and insight-rich learning analytics in one responsive interface.
+                The experience is intentionally centered on knowledge-domain selection, then moves into a focused,
+                retrieval-backed quiz flow with grounded explanations after each answer.
               </p>
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-3">
-              {platformStats.map((stat) => {
-                const Icon = stat.icon;
-                return (
-                  <div
-                    key={stat.label}
-                    className="rounded-[24px] border border-white/10 bg-slate-950/50 px-4 py-5 backdrop-blur-xl"
-                  >
-                    <div className="flex items-center gap-2 text-cyan-200">
-                      <Icon className="h-4 w-4" />
-                      <span className="text-xs uppercase tracking-[0.25em] text-slate-400">{stat.label}</span>
-                    </div>
-                    <p className="mt-3 text-2xl font-semibold text-white">{stat.value}</p>
-                  </div>
-                );
-              })}
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div className="rounded-[24px] border border-white/10 bg-slate-950/50 px-5 py-5 backdrop-blur-xl">
+                <div className="flex items-center gap-2 text-cyan-200">
+                  <Layers3 className="h-4 w-4" />
+                  <span className="text-xs uppercase tracking-[0.25em] text-slate-400">Active Domain</span>
+                </div>
+                <p className="mt-3 text-2xl font-semibold text-white">{activeGenre?.name}</p>
+              </div>
+              <div className="rounded-[24px] border border-white/10 bg-slate-950/50 px-5 py-5 backdrop-blur-xl">
+                <div className="flex items-center gap-2 text-cyan-200">
+                  <Sparkles className="h-4 w-4" />
+                  <span className="text-xs uppercase tracking-[0.25em] text-slate-400">Quiz Flow</span>
+                </div>
+                <p className="mt-3 text-2xl font-semibold text-white">Interactive + grounded</p>
+              </div>
             </div>
           </div>
         </motion.section>
 
-        <div className="grid gap-6 xl:grid-cols-[1.25fr_0.85fr]">
-          <motion.section
-            variants={shellMotion}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 0.08 }}
-            className="rounded-[32px] border border-white/10 bg-white/[0.04] p-5 backdrop-blur-2xl sm:p-6"
-          >
-            <div className="flex items-center justify-between gap-4">
-              <div>
-                <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Genre Selection Hub</p>
-                <h2 className="mt-2 text-2xl font-semibold text-white">Choose a retrieval domain</h2>
-              </div>
-              <div className="hidden rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 md:block">
-                Hover cards for tilt depth
-              </div>
+        <motion.section
+          variants={shellMotion}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.08 }}
+          className="rounded-[32px] border border-white/10 bg-white/[0.04] p-5 backdrop-blur-2xl sm:p-6"
+        >
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Domain Selection Hub</p>
+              <h2 className="mt-2 text-3xl font-semibold text-white">Choose the knowledge domain first</h2>
             </div>
+            <div className="hidden rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 md:block">
+              Domain choice drives the quiz experience
+            </div>
+          </div>
 
-            <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {genres.map((genre) => (
-                <GenreCard
-                  key={genre.id}
-                  genre={genre}
-                  active={quiz.selectedGenre === genre.id}
-                  onClick={() => quiz.selectGenre(genre.id)}
-                />
-              ))}
-            </div>
-          </motion.section>
-          <Suspense fallback={<AnalyticsSkeleton />}>
-            <AnalyticsPanels variant="snapshot" />
-          </Suspense>
-        </div>
+          <div className="mt-3 max-w-3xl text-sm leading-7 text-slate-300">
+            Each domain changes the question set, grounding sources, and explanation context. This is the primary control surface of the product.
+          </div>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {genres.map((genre) => (
+              <GenreCard
+                key={genre.id}
+                genre={genre}
+                active={quiz.selectedGenre === genre.id}
+                onClick={() => quiz.selectGenre(genre.id)}
+              />
+            ))}
+          </div>
+        </motion.section>
 
         <div className="grid gap-6 2xl:grid-cols-[1.2fr_0.8fr]">
           <motion.section
@@ -308,14 +283,8 @@ function App() {
                   <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Active Quiz Interface</p>
                   <h2 className="mt-2 text-2xl font-semibold text-white">{activeGenre?.name}</h2>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300">
-                    {quiz.currentIndex + 1} / {quiz.totalQuestions}
-                  </div>
-                  <div className="flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-100">
-                    <TimerReset className="h-4 w-4" />
-                    {quiz.timer}s
-                  </div>
+                <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300">
+                  Question {quiz.currentIndex + 1} of {quiz.totalQuestions}
                 </div>
               </div>
 
@@ -355,23 +324,26 @@ function App() {
                   </div>
 
                   <div className="mt-6 grid gap-3">
-                    {quiz.currentQuestion.options.map((option) => {
+                    {quiz.currentQuestion.options.map((option, index) => {
                       const isSelected = quiz.selectedOption === option;
                       const isCorrect = quiz.insight && option === quiz.currentQuestion.answer;
                       const isIncorrectSelected =
                         quiz.insight && isSelected && option !== quiz.currentQuestion.answer;
+                      const letter = String.fromCharCode(65 + index);
 
                       return (
-                        <label
+                        <motion.label
                           key={option}
+                          whileHover={quiz.insight ? undefined : { scale: 1.01, y: -2 }}
+                          whileTap={quiz.insight ? undefined : { scale: 0.99 }}
                           className={`flex cursor-pointer items-start gap-4 rounded-[24px] border p-4 transition ${
                             isCorrect
                               ? "border-emerald-400/40 bg-emerald-400/10"
                               : isIncorrectSelected
                                 ? "border-amber-400/40 bg-amber-400/10"
                                 : isSelected
-                                  ? "border-indigo-400/50 bg-indigo-500/10"
-                                  : "border-white/10 bg-slate-950/50 hover:border-cyan-400/30"
+                                  ? "border-indigo-400/50 bg-linear-to-r from-indigo-500/20 to-cyan-400/10 shadow-[0_0_0_1px_rgba(99,102,241,0.25),0_18px_45px_rgba(99,102,241,0.12)]"
+                                  : "border-white/10 bg-slate-950/50 hover:border-cyan-400/30 hover:bg-white/[0.06]"
                           }`}
                         >
                           <input
@@ -382,8 +354,26 @@ function App() {
                             onChange={() => quiz.selectOption(option)}
                             disabled={quiz.isRagLoading || quiz.insight}
                           />
+                          <div
+                            className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border text-sm font-semibold ${
+                              isCorrect
+                                ? "border-emerald-300/40 bg-emerald-400/15 text-emerald-100"
+                                : isIncorrectSelected
+                                  ? "border-amber-300/40 bg-amber-400/15 text-amber-100"
+                                  : isSelected
+                                    ? "border-indigo-300/40 bg-indigo-400/20 text-indigo-100"
+                                    : "border-white/10 bg-white/5 text-slate-200"
+                            }`}
+                          >
+                            {letter}
+                          </div>
                           <span className="flex-1 text-base leading-7 text-slate-100">{option}</span>
-                        </label>
+                          {!quiz.insight && isSelected && (
+                            <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-100">
+                              Selected
+                            </span>
+                          )}
+                        </motion.label>
                       );
                     })}
                   </div>
@@ -425,9 +415,6 @@ function App() {
             className="space-y-6"
           >
             <InsightPanel insight={quiz.insight} loading={quiz.isRagLoading} />
-            <Suspense fallback={<AnalyticsSkeleton />}>
-              <AnalyticsPanels variant="timeline" />
-            </Suspense>
 
             {quiz.quizComplete && (
               <section className="rounded-[32px] border border-emerald-400/20 bg-emerald-400/10 p-5 backdrop-blur-2xl sm:p-6">
@@ -440,10 +427,6 @@ function App() {
             )}
           </motion.div>
         </div>
-
-        <Suspense fallback={<AnalyticsSkeleton />}>
-          <AnalyticsPanels variant="dashboard" />
-        </Suspense>
       </main>
     </div>
   );
