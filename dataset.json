@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ai_01",
+    "genre": "ai_systems",
+    "question": "What is the main purpose of retrieval-augmented generation (RAG) in an AI app?",
+    "options": [
+      "To make model training faster",
+      "To ground responses in external knowledge",
+      "To reduce screen rendering time",
+      "To replace all APIs with local files"
+    ],
+    "correct_answer": "To ground responses in external knowledge",
+    "explanation_context": "Retrieval-augmented generation improves reliability by fetching relevant documents at query time and supplying them to the model before generation. This helps the model answer with evidence tied to real sources rather than only relying on parametric memory. As a result, hallucinations are reduced and explanations can cite supporting context."
+  },
+  {
+    "id": "hist_01",
+    "genre": "world_history",
+    "question": "Why is the printing press often seen as a turning point in world history?",
+    "options": [
+      "It ended all wars in Europe",
+      "It allowed ideas to spread quickly and widely",
+      "It replaced handwritten scripts overnight",
+      "It was used only by royal families"
+    ],
+    "correct_answer": "It allowed ideas to spread quickly and widely",
+    "explanation_context": "The printing press dramatically lowered the cost and time needed to copy books and pamphlets. This made religious, scientific, and political ideas accessible to far more people across regions. Its impact on literacy, reform movements, and knowledge exchange made it a major historical accelerator."
+  },
+  {
+    "id": "lit_01",
+    "genre": "indian_literature",
+    "question": "Which text is traditionally associated with the dialogue between Arjuna and Krishna?",
+    "options": [
+      "Arthashastra",
+      "Bhagavad Gita",
+      "Meghaduta",
+      "Panchatantra"
+    ],
+    "correct_answer": "Bhagavad Gita",
+    "explanation_context": "The Bhagavad Gita appears within the Mahabharata and presents a philosophical dialogue between Prince Arjuna and Krishna on duty, ethics, and spiritual understanding. It addresses moral conflict in the context of action and responsibility. Because of its themes and influence, it remains one of the central works in Indian literary and philosophical traditions."
+  },
+  {
+    "id": "space_01",
+    "genre": "space_cosmology",
+    "question": "What does the Big Bang theory primarily describe?",
+    "options": [
+      "The explosion of a single star",
+      "The origin and expansion of the universe",
+      "The birth of the Milky Way alone",
+      "The cause of all black holes"
+    ],
+    "correct_answer": "The origin and expansion of the universe",
+    "explanation_context": "The Big Bang theory explains that the universe began in an extremely hot, dense state and has been expanding over time. Evidence includes the observed redshift of distant galaxies and the cosmic microwave background radiation. Together, these observations support a model of large-scale cosmic evolution from an early high-energy state."
+  },
+  {
+    "id": "sci_01",
+    "genre": "general_science",
+    "question": "Why does ice float on liquid water?",
+    "options": [
+      "Ice absorbs heat from air",
+      "Ice is less dense than liquid water",
+      "Ice contains trapped oxygen only",
+      "Ice has no molecular structure"
+    ],
+    "correct_answer": "Ice is less dense than liquid water",
+    "explanation_context": "When water freezes, hydrogen bonding arranges molecules into a crystalline structure that occupies more space than the same mass of liquid water. This increased volume lowers density, and less dense substances float over denser ones. That density difference is why ice remains at the surface of lakes and oceans."
+  },
+  {
+    "id": "geo_01",
+    "genre": "geography",
+    "question": "Which factor most directly influences whether a region has a tropical rainforest climate?",
+    "options": [
+      "Consistent high rainfall and warm temperatures",
+      "High altitude and sparse vegetation",
+      "Long freezing winters with low humidity",
+      "Distance from any river system"
+    ],
+    "correct_answer": "Consistent high rainfall and warm temperatures",
+    "explanation_context": "Tropical rainforest climates are defined by year-round warmth and abundant precipitation, which support dense evergreen vegetation. These conditions are common near the equator where solar energy is high and convectional rainfall is frequent. The combination of heat and moisture drives high biodiversity and complex ecosystems."
+  }
+]
