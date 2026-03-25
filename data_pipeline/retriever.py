@@ -7,8 +7,17 @@ from pathlib import Path
 from typing import Any
 
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_chroma import Chroma
+
+try:
+    from data_pipeline.embeddings import get_embedding_function
+except ModuleNotFoundError:
+    from embeddings import get_embedding_function
+
+# Disable noisy Chroma telemetry warnings in local/dev runs.
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+os.environ["CHROMA_TELEMETRY_IMPL"] = "none"
 
 DEFAULT_PERSIST_DIR = Path("chroma_db")
 
@@ -29,6 +38,12 @@ def _require_api_key() -> str:
     if not api_key:
         raise RuntimeError("Missing GOOGLE_API_KEY. Set it in environment or .env.")
     return api_key
+
+
+def _optional_api_key() -> str | None:
+    load_dotenv()
+    api_key = os.getenv("GOOGLE_API_KEY")
+    return api_key if api_key else None
 
 
 def _safe_parse_json(text: str) -> dict[str, Any]:
@@ -95,12 +110,9 @@ def get_quiz_explanation(
     if not genre.strip():
         raise ValueError("Genre is required.")
 
-    api_key = _require_api_key()
+    api_key = _optional_api_key()
 
-    embeddings = GoogleGenerativeAIEmbeddings(
-        model="models/text-embedding-004",
-        google_api_key=api_key,
-    )
+    embeddings = get_embedding_function()
 
     collection_name = _normalize_collection_name(genre)
     vectorstore = Chroma(
@@ -122,6 +134,7 @@ def get_quiz_explanation(
         }
 
     context, citations = _build_context_chunks(docs)
+    generation_provider = os.getenv("GENERATION_PROVIDER", "auto").strip().lower()
 
     prompt = f"""
 You are an expert quiz tutor.
@@ -150,19 +163,110 @@ Rules:
 - do not include markdown
 """.strip()
 
+    try:
+        if generation_provider == "local":
+            raise RuntimeError("GENERATION_PROVIDER=local, skipping live generation.")
+
+        if not api_key:
+            raise RuntimeError("GOOGLE_API_KEY unavailable for live generation.")
+
+        llm = ChatGoogleGenerativeAI(
+            model="gemini-2.5-flash",
+            google_api_key=api_key,
+            temperature=0.2,
+        )
+        llm_response = llm.invoke(prompt)
+        llm_content = llm_response.content if hasattr(llm_response, "content") else str(llm_response)
+        parsed = _safe_parse_json(llm_content)
+
+        return {
+            "is_correct": bool(parsed.get("is_correct", False)),
+            "explanation": str(parsed.get("explanation", "No explanation generated.")),
+            "confidence_score": _clamp_confidence(parsed.get("confidence_score", 0.5)),
+            "citations": citations,
+        }
+    except Exception as exc:  # noqa: BLE001
+        # Offline-safe fallback when generation API is temporarily unreachable.
+        top_meta = docs[0].metadata or {}
+        expected = str(top_meta.get("correct_answer", "")).strip().lower()
+        normalized_user = user_answer.strip().lower()
+        is_correct = expected != "" and normalized_user == expected
+        explanation = (
+            "Live model generation is temporarily unavailable, so this fallback uses retrieved context only. "
+            f"Expected answer from top retrieved record: '{top_meta.get('correct_answer', 'unknown')}'. "
+            f"Context summary: {top_meta.get('explanation_context', 'No context available.')}"
+        )
+        print(f"[retriever] Gemini generation unavailable, fallback used: {exc}")
+        return {
+            "is_correct": is_correct,
+            "explanation": explanation,
+            "confidence_score": 0.45,
+            "citations": citations,
+        }
+
+
+def generate_followup_response(
+    followup_query: str,
+    question: str,
+    genre: str,
+    grounded_explanation: str,
+    persist_dir: Path = DEFAULT_PERSIST_DIR,
+) -> dict[str, Any]:
+    if not followup_query.strip():
+        raise ValueError("Follow-up query is required.")
+    if not question.strip():
+        raise ValueError("Question text is required.")
+    if not genre.strip():
+        raise ValueError("Genre is required.")
+
+    embeddings = get_embedding_function()
+    collection_name = _normalize_collection_name(genre)
+    vectorstore = Chroma(
+        collection_name=collection_name,
+        persist_directory=str(persist_dir),
+        embedding_function=embeddings,
+    )
+
+    retrieval_query = f"{question}\n{followup_query}"
+    docs = vectorstore.similarity_search(retrieval_query, k=2)
+    context, citations = _build_context_chunks(docs)
+
+    api_key = _optional_api_key()
+    if not api_key:
+        raise RuntimeError("GOOGLE_API_KEY is required for follow-up generation.")
+
+    prompt = f"""
+You are a helpful quiz tutor.
+Answer the user's follow-up question clearly using the provided grounded explanation and retrieved context.
+If context is missing, state that briefly and still answer conservatively.
+
+Original Question:
+{question}
+
+Grounded Explanation:
+{grounded_explanation}
+
+User Follow-up:
+{followup_query}
+
+Retrieved Context:
+{context}
+
+Response rules:
+- Keep answer concise and useful (4-8 sentences).
+- Stay factual and avoid speculation.
+- Do not use markdown headings.
+""".strip()
+
     llm = ChatGoogleGenerativeAI(
         model="gemini-2.5-flash",
         google_api_key=api_key,
-        temperature=0.2,
+        temperature=0.3,
     )
     llm_response = llm.invoke(prompt)
-    llm_content = llm_response.content if hasattr(llm_response, "content") else str(llm_response)
-
-    parsed = _safe_parse_json(llm_content)
+    answer = llm_response.content if hasattr(llm_response, "content") else str(llm_response)
 
     return {
-        "is_correct": bool(parsed.get("is_correct", False)),
-        "explanation": str(parsed.get("explanation", "No explanation generated.")),
-        "confidence_score": _clamp_confidence(parsed.get("confidence_score", 0.5)),
+        "answer": str(answer).strip(),
         "citations": citations,
     }

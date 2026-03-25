@@ -9,8 +9,16 @@ from typing import Any
 
 from dotenv import load_dotenv
 from langchain_core.documents import Document
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
+
+try:
+    from data_pipeline.embeddings import get_embedding_function
+except ModuleNotFoundError:
+    from embeddings import get_embedding_function
+
+# Disable noisy Chroma telemetry warnings in local/dev runs.
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+os.environ["CHROMA_TELEMETRY_IMPL"] = "none"
 
 REQUIRED_FIELDS = {
     "id",
@@ -98,17 +106,11 @@ def _build_documents(rows: list[dict[str, Any]]) -> dict[str, tuple[list[Documen
 
 def ingest_dataset(dataset_path: Path, persist_dir: Path) -> None:
     load_dotenv()
-    api_key = os.getenv("GOOGLE_API_KEY")
-    if not api_key:
-        raise RuntimeError("Missing GOOGLE_API_KEY. Set it in environment or .env.")
 
     rows = _load_json_rows(dataset_path)
     grouped_docs = _build_documents(rows)
 
-    embeddings = GoogleGenerativeAIEmbeddings(
-        model="models/text-embedding-004",
-        google_api_key=api_key,
-    )
+    embeddings = get_embedding_function()
 
     persist_dir.mkdir(parents=True, exist_ok=True)
 
