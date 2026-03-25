@@ -7,12 +7,12 @@ import {
   ChevronRight,
   CircleGauge,
   Layers3,
-  LibraryBig,
   LoaderCircle,
   Sparkles,
 } from "lucide-react";
 import { genres } from "./data";
 import { useQuiz } from "./useQuiz";
+import answerLogo from "../answer.svg";
 
 const shellMotion = {
   hidden: { opacity: 0, y: 24 },
@@ -298,7 +298,7 @@ function App() {
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-indigo-500/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-indigo-200">
-                <LibraryBig className="h-4 w-4" />
+                <img src={answerLogo} alt="Answer Logo" className="h-4 w-4 object-contain" />
                 RAG-Powered Intelligent Quiz Platform
               </div>
               <h1 className="mt-5 font-['Geist'] text-4xl font-semibold tracking-tight text-white sm:text-5xl">
