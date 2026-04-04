@@ -1,0 +1,102 @@
+id,domain,question,option_A,option_B,option_C,option_D,answer,explanation
+AI-001,AI Systems,AI stands for?,Artificial Intelligence,Automated Interface,Advanced Internet,Algorithmic Input,A,Artificial Intelligence refers to machines performing tasks that typically require human intelligence.
+AI-002,AI Systems,Machine Learning is best described as?,Programming without data,Learning from data,Only rule-based systems,Hardware design,B,Machine Learning enables systems to learn patterns from data and improve performance over time.
+AI-003,AI Systems,Which type of learning uses labeled data?,Unsupervised,Supervised,Reinforcement,Transfer,B,Supervised learning trains models using input-output pairs where the correct answer is known.
+AI-004,AI Systems,Which type of learning finds patterns without labels?,Supervised,Unsupervised,Reinforcement,Deep,B,"Unsupervised learning discovers hidden structures in unlabeled data, such as clustering."
+AI-005,AI Systems,Reinforcement learning is based on?,Labels,Rewards and penalties,Images,Databases,B,Agents learn by interacting with an environment and receiving rewards or penalties.
+AI-006,AI Systems,Overfitting means?,Good generalization,Memorizing training data,Ignoring data,Too few features,B,Overfitting occurs when a model captures noise in training data and fails on new data.
+AI-007,AI Systems,Underfitting means?,Too complex model,Too simple model,Too much data,Too many features,B,Underfitting happens when a model is too simple to learn the underlying pattern.
+AI-008,AI Systems,Which algorithm is for classification?,K-Means,Naive Bayes,PCA,Apriori,B,Naive Bayes is widely used for classification tasks like spam detection.
+AI-009,AI Systems,Which algorithm is for clustering?,KNN,K-Means,Linear Regression,SVM,B,K-Means groups similar data points into clusters without labels.
+AI-010,AI Systems,Which model is best for images?,RNN,CNN,KNN,Naive Bayes,B,CNNs use convolution to capture spatial features in images.
+AI-011,AI Systems,Which model is best for sequences?,CNN,RNN,K-Means,SVM,B,RNNs are designed to process sequential data like text and time series.
+AI-012,AI Systems,What is NLP?,Network Learning Protocol,Natural Language Processing,Neural Logic Programming,Nonlinear Processing,B,NLP enables machines to understand and generate human language.
+AI-013,AI Systems,What is a dataset?,Hardware,Collection of data,Algorithm,Model,B,A dataset is a structured collection of data used for training and evaluation.
+AI-014,AI Systems,Training data is used to?,Test model,Train model,Deploy model,Delete model,B,Training data is used to learn patterns and parameters of a model.
+AI-015,AI Systems,Test data is used to?,Train model,Evaluate model,Store model,Visualize model,B,Test data evaluates how well a trained model generalizes to unseen data.
+AI-016,AI Systems,Validation data is used to?,Final test,Tune model,Delete data,Deploy,B,Validation data helps tune hyperparameters during training.
+AI-017,AI Systems,What is accuracy?,Error rate,Correct predictions ratio,Training speed,Memory,B,Accuracy measures the proportion of correct predictions among all predictions.
+AI-018,AI Systems,Precision focuses on?,All positives,Correct positives,All negatives,Speed,B,Precision measures how many predicted positives are actually correct.
+AI-019,AI Systems,Recall focuses on?,Correct positives,All positives,All negatives,Latency,A,Recall measures how many actual positives are correctly identified.
+AI-020,AI Systems,What is F1 score?,Average of accuracy,Harmonic mean of precision and recall,Max of metrics,Min of metrics,B,"F1 balances precision and recall, useful for imbalanced datasets."
+AI-021,AI Systems,What is feature?,Output,Input variable,Model,Loss,B,Features are input variables used by models to make predictions.
+AI-022,AI Systems,What is label?,Input,Output,Noise,Bias,B,Labels are the target outputs in supervised learning.
+AI-023,AI Systems,What is regression?,Classification,Predict continuous value,Clustering,Ranking,B,Regression predicts continuous numerical outputs.
+AI-024,AI Systems,What is classification?,Predict category,Predict number,Cluster data,Sort data,A,Classification assigns inputs to discrete categories.
+AI-025,AI Systems,Linear regression predicts?,Categories,Continuous values,Clusters,Images,B,Linear regression models relationships between variables for continuous outputs.
+AI-026,AI Systems,Logistic regression is used for?,Clustering,Classification,Regression only,Sorting,B,"Despite its name, logistic regression is used for classification tasks."
+AI-027,AI Systems,What is a model?,Hardware,Mathematical function,Dataset,UI,B,A model is a mathematical representation that maps inputs to outputs.
+AI-028,AI Systems,What is training?,Testing,Learning patterns,Deleting data,Deployment,B,Training adjusts model parameters based on data.
+AI-029,AI Systems,What is inference?,Training,Prediction phase,Cleaning data,Logging,B,Inference is using a trained model to make predictions.
+AI-030,AI Systems,What is bias in ML?,Error due to noise,Error from wrong assumptions,Hardware issue,Latency,B,Bias arises from incorrect assumptions in the learning algorithm.
+AI-031,AI Systems,What is variance?,Error from noise,Sensitivity to data changes,Speed,Memory,B,Variance measures how much predictions change with different training data.
+AI-032,AI Systems,Bias-variance tradeoff is?,Speed vs memory,Underfit vs overfit balance,Data vs labels,CPU vs GPU,B,It balances model simplicity and complexity for best generalization.
+AI-033,AI Systems,What is deep learning?,Shallow models,Neural networks with many layers,Only regression,Only clustering,B,Deep learning uses multi-layer neural networks to learn representations.
+AI-034,AI Systems,Neuron in NN is?,CPU,Mathematical unit,Dataset,Feature,B,A neuron computes weighted sums followed by activation.
+AI-035,AI Systems,Activation function does?,Stores data,Adds non-linearity,Deletes data,Sorts data,B,Activation functions allow networks to learn complex patterns.
+AI-036,AI Systems,ReLU stands for?,Random Linear Unit,Rectified Linear Unit,Recursive Logic Unit,Regularized Linear Unit,B,"ReLU outputs max(0, x), introducing non-linearity."
+AI-037,AI Systems,Sigmoid outputs?,-1 to 1,0 to 1,0 to ∞,-∞ to ∞,B,Sigmoid maps inputs to probabilities between 0 and 1.
+AI-038,AI Systems,Softmax is used for?,Regression,Multi-class classification,Clustering,Sorting,B,Softmax converts scores into probabilities across classes.
+AI-039,AI Systems,Loss function measures?,Speed,Error,Memory,Accuracy,B,Loss quantifies the difference between predicted and true values.
+AI-040,AI Systems,MSE is used for?,Classification,Regression,Clustering,Ranking,B,Mean Squared Error is common for regression tasks.
+AI-041,AI Systems,Cross-entropy is used for?,Regression,Classification,Clustering,Sorting,B,Cross-entropy measures classification error.
+AI-042,AI Systems,Gradient descent is?,Optimizer,Dataset,Feature,Label,A,Gradient descent updates parameters to minimize loss.
+AI-043,AI Systems,Learning rate controls?,Speed of updates,Dataset size,Model type,Output,A,Learning rate determines step size in optimization.
+AI-044,AI Systems,Epoch means?,One pass over data,One sample,One feature,One layer,A,An epoch is one complete pass through the training dataset.
+AI-045,AI Systems,Batch size is?,All data,Subset per update,Model size,Feature count,B,Batch size defines how many samples are processed before updating weights.
+AI-046,AI Systems,What is regularization?,Increase error,Reduce overfitting,Increase data,Delete features,B,Regularization adds constraints to reduce overfitting.
+AI-047,AI Systems,L1 regularization encourages?,Small weights,Sparse weights,Large weights,Random weights,B,"L1 drives some weights to zero, creating sparsity."
+AI-048,AI Systems,L2 regularization encourages?,Sparse weights,Small weights,Zero weights,Random weights,B,"L2 penalizes large weights, keeping them small."
+AI-049,AI Systems,Dropout does?,Adds neurons,Removes neurons randomly,Sorts data,Normalizes,B,Dropout randomly deactivates neurons during training to prevent overfitting.
+AI-050,AI Systems,Normalization helps?,Slow training,Faster and stable training,Delete data,Increase noise,B,Normalization scales inputs to improve convergence.
+AI-051,AI Systems,Standardization means?,"Mean 0, std 1","Mean 1, std 0",Scale 0-1,Binary,A,Standardization transforms data to zero mean and unit variance.
+AI-052,AI Systems,What is feature scaling?,Ignore features,Scale features,Delete features,Duplicate features,B,Scaling ensures features contribute equally to the model.
+AI-053,AI Systems,What is data preprocessing?,Modeling,Cleaning data,Deployment,Inference,B,Preprocessing prepares raw data for modeling.
+AI-054,AI Systems,Missing values can be?,Ignored,Imputed,Deleted always,Random,B,Imputation fills missing values with estimates.
+AI-055,AI Systems,Outliers are?,Typical values,Extreme values,Missing values,Labels,B,Outliers are unusually high or low values.
+AI-056,AI Systems,Train-test split is?,Same data,Separate data,No data,Random guess,B,Splitting prevents data leakage and evaluates generalization.
+AI-057,AI Systems,Cross-validation helps?,Overfit,Better evaluation,Delete data,Speed,B,Cross-validation uses multiple splits for robust evaluation.
+AI-058,AI Systems,KNN is based on?,Distance,Probability,Rules,Trees,A,KNN classifies based on nearest neighbors.
+AI-059,AI Systems,Decision tree splits based on?,Random,Features,Time,Memory,B,Trees split data using feature thresholds.
+AI-060,AI Systems,Random forest is?,Single tree,Multiple trees,Linear model,Cluster,B,Random forest combines many trees for better performance.
+AI-061,AI Systems,SVM tries to?,Cluster,Maximize margin,Minimize features,Sort data,B,SVM finds a hyperplane with maximum margin between classes.
+AI-062,AI Systems,PCA is used for?,Classification,Dimensionality reduction,Clustering,Regression,B,PCA reduces features while preserving variance.
+AI-063,AI Systems,Feature engineering is?,Deleting features,Creating useful features,Training,Testing,B,It transforms raw data into informative inputs.
+AI-064,AI Systems,What is a hyperparameter?,Learned param,Set before training,Output,Feature,B,"Hyperparameters are set prior to training (e.g., learning rate)."
+AI-065,AI Systems,Grid search is used for?,Training,Hyperparameter tuning,Deployment,Inference,B,Grid search tries combinations to find best hyperparameters.
+AI-066,AI Systems,What is a confusion matrix?,Graph,Table of predictions,Dataset,Model,B,"It summarizes prediction outcomes (TP, FP, TN, FN)."
+AI-067,AI Systems,True positive means?,Wrong positive,Correct positive,Wrong negative,Correct negative,B,A true positive is a correct positive prediction.
+AI-068,AI Systems,False positive means?,Correct positive,Wrong positive,Correct negative,Wrong negative,B,A false positive is incorrectly predicting positive.
+AI-069,AI Systems,True negative means?,Correct negative,Wrong negative,Correct positive,Wrong positive,A,A true negative is correctly predicting negative.
+AI-070,AI Systems,False negative means?,Correct negative,Wrong negative,Correct positive,Wrong positive,B,A false negative misses a positive case.
+AI-071,AI Systems,ROC curve shows?,Loss,Trade-off,Accuracy,Speed,B,ROC shows trade-off between TPR and FPR.
+AI-072,AI Systems,AUC measures?,Speed,Area under ROC,Loss,Precision,B,AUC quantifies classifier performance.
+AI-073,AI Systems,What is RAG?,Only generation,Retrieval + generation,Only retrieval,Sorting,B,RAG combines retrieval of documents with generation.
+AI-074,AI Systems,Vector embeddings are?,Numbers,Text only,Images,Audio,A,Embeddings represent data as numeric vectors.
+AI-075,AI Systems,Vector database stores?,Tables,Embeddings,Images only,Logs,B,Vector DB stores embeddings for similarity search.
+AI-076,AI Systems,Similarity search finds?,Random data,Closest vectors,Sorted lists,Labels,B,It retrieves items most similar in vector space.
+AI-077,AI Systems,What is tokenization?,Joining text,Splitting text,Deleting text,Encoding images,B,Tokenization breaks text into smaller units.
+AI-078,AI Systems,LLM stands for?,Large Language Model,Linear Logic Model,Low Latency Model,Learning Loop Model,A,LLMs are large neural networks trained on text.
+AI-079,AI Systems,Context window is?,UI size,Max tokens processed,Dataset size,Memory size,B,It limits how much text the model can process at once.
+AI-080,AI Systems,Hallucination in AI is?,Correct output,False output,Slow output,Fast output,B,Hallucination refers to generating incorrect information.
+AI-081,AI Systems,Prompt is?,Dataset,Input text,Model,Loss,B,Prompt is the input given to an AI model.
+AI-082,AI Systems,Fine-tuning is?,Training from scratch,Adjusting pretrained model,Deleting model,Testing,B,Fine-tuning adapts a pretrained model to specific tasks.
+AI-083,AI Systems,Transfer learning means?,No learning,Reuse knowledge,Delete data,Random,B,It uses knowledge from one task for another.
+AI-084,AI Systems,What is chatbot?,Hardware,Conversational AI,Dataset,Loss,B,Chatbots interact with users using NLP.
+AI-085,AI Systems,Speech recognition converts?,Text to speech,Speech to text,Image to text,Video to text,B,It transcribes spoken words into text.
+AI-086,AI Systems,Computer vision deals with?,Text,Images,Audio,Numbers,B,It enables machines to interpret visual data.
+AI-087,AI Systems,Edge AI runs on?,Cloud only,Local devices,Servers only,Databases,B,Edge AI runs models on devices like phones.
+AI-088,AI Systems,Cloud AI runs on?,Local devices,Remote servers,Sensors,Routers,B,Cloud AI processes data on remote servers.
+AI-089,AI Systems,Ethics in AI concerns?,Speed,Fairness,Memory,Storage,B,"Ethics addresses bias, fairness, and accountability."
+AI-090,AI Systems,Bias in data causes?,Better model,Unfair results,Faster training,Less data,B,Biased data leads to unfair predictions.
+AI-091,AI Systems,Explainability means?,Black box,Understandable model,Fast model,Small model,B,Explainability helps interpret model decisions.
+AI-092,AI Systems,What is automation?,Manual work,Automatic tasks,Random tasks,Slow tasks,B,Automation uses machines to perform tasks automatically.
+AI-093,AI Systems,What is recommendation system?,Search engine,Suggest items,Delete items,Sort items,B,It suggests products or content to users.
+AI-094,AI Systems,Spam filter uses?,Clustering,Classification,Regression,Sorting,B,Spam filters classify emails as spam or not.
+AI-095,AI Systems,Fraud detection uses?,Classification,Regression,Sorting,Clustering,A,It identifies suspicious transactions.
+AI-096,AI Systems,Self-driving cars use?,AI,Only hardware,Manual driving,Static rules,A,They use AI for perception and decision-making.
+AI-097,AI Systems,Robotics combines?,Only software,AI + hardware,Only data,Only ML,B,Robotics integrates AI with physical systems.
+AI-098,AI Systems,IoT with AI enables?,No automation,Smart systems,Manual systems,Offline systems,B,AI + IoT enables smart environments.
+AI-099,AI Systems,What is scalability?,Small systems,Handle growth,Delete data,Slow down,B,Scalability is the ability to handle increasing load.
+AI-100,AI Systems,Latency means?,Delay,Speed,Memory,Storage,A,Latency is the delay in response time.
+AI-101,AI Systems,Throughput means?,Delay,Amount processed,Memory,Loss,B,Throughput is how much work is processed over time.
