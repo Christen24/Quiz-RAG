@@ -1,0 +1,101 @@
+id,domain,question,option_A,option_B,option_C,option_D,answer,explanation
+ILU-001,Indian Literature,Who wrote the Ramcharitmanas?,Tulsidas,Valmiki,Kalidasa,Kabir,A,Tulsidas composed Ramcharitmanas in Awadhi.
+ILU-002,Indian Literature,Which poet wrote Meghaduta?,Kalidasa,Bhasa,Banabhatta,Sudraka,A,"Kalidasa wrote Meghaduta, a lyrical Sanskrit poem."
+ILU-003,Indian Literature,Who authored 'The Guide'?,R.K. Narayan,Premchand,Tagore,Ghosh,A,R.K. Narayan wrote The Guide.
+ILU-004,Indian Literature,Which work is by Bankim Chandra Chatterjee?,Anandamath,Godaan,Gitanjali,Malgudi Days,A,Anandamath includes the song Vande Mataram.
+ILU-005,Indian Literature,Who wrote 'A Suitable Boy'?,Vikram Seth,Rushdie,Adiga,Desai,A,Vikram Seth authored this novel.
+ILU-006,Indian Literature,Which language is Kabir known for?,Hindi,Tamil,Urdu,English,A,Kabir wrote in Hindi dialects.
+ILU-007,Indian Literature,Who wrote 'Gora'?,Tagore,Premchand,Narayan,Ghosh,A,Gora is a novel by Rabindranath Tagore.
+ILU-008,Indian Literature,Which poet is known for 'Sarojini Naidu'?,Nightingale of India,Poet Laureate,Saint Poet,Modernist,A,Sarojini Naidu is called Nightingale of India.
+ILU-009,Indian Literature,Which author is associated with the work 'Sursagar'?,Surdas,Kalidasa,Premchand,Tagore,A,Surdas is associated with Sursagar in Indian literature.
+ILU-010,Indian Literature,Which author is associated with the work 'Life Divine'?,Aurobindo,Kalidasa,Premchand,Tagore,A,Aurobindo is associated with Life Divine in Indian literature.
+ILU-011,Indian Literature,Which author is associated with the work 'Gitanjali'?,Tagore,Kalidasa,Premchand,Tagore,A,Tagore is associated with Gitanjali in Indian literature.
+ILU-012,Indian Literature,Which author is associated with the work 'Godaan'?,Premchand,Kalidasa,Premchand,Tagore,A,Premchand is associated with Godaan in Indian literature.
+ILU-013,Indian Literature,Which author is associated with the work 'Shakuntala'?,Kalidasa,Kalidasa,Premchand,Tagore,A,Kalidasa is associated with Shakuntala in Indian literature.
+ILU-014,Indian Literature,Which author is associated with the work 'Mudrarakshasa'?,Bhasa,Kalidasa,Premchand,Tagore,A,Bhasa is associated with Mudrarakshasa in Indian literature.
+ILU-015,Indian Literature,Which author is associated with the work 'Malati Madhava'?,Bhavabhuti,Kalidasa,Premchand,Tagore,A,Bhavabhuti is associated with Malati Madhava in Indian literature.
+ILU-016,Indian Literature,Which author is associated with the work 'Dohe'?,Kabir,Kalidasa,Premchand,Tagore,A,Kabir is associated with Dohe in Indian literature.
+ILU-017,Indian Literature,Which author is associated with the work 'Ramcharitmanas'?,Tulsidas,Kalidasa,Premchand,Tagore,A,Tulsidas is associated with Ramcharitmanas in Indian literature.
+ILU-018,Indian Literature,Which author is associated with the work 'Bhajans'?,Mirabai,Kalidasa,Premchand,Tagore,A,Mirabai is associated with Bhajans in Indian literature.
+ILU-019,Indian Literature,Which author is associated with the work 'Sursagar'?,Surdas,Kalidasa,Premchand,Tagore,A,Surdas is associated with Sursagar in Indian literature.
+ILU-020,Indian Literature,Which author is associated with the work 'Life Divine'?,Aurobindo,Kalidasa,Premchand,Tagore,A,Aurobindo is associated with Life Divine in Indian literature.
+ILU-021,Indian Literature,Which author is associated with the work 'Gitanjali'?,Tagore,Kalidasa,Premchand,Tagore,A,Tagore is associated with Gitanjali in Indian literature.
+ILU-022,Indian Literature,Which author is associated with the work 'Godaan'?,Premchand,Kalidasa,Premchand,Tagore,A,Premchand is associated with Godaan in Indian literature.
+ILU-023,Indian Literature,Which author is associated with the work 'Shakuntala'?,Kalidasa,Kalidasa,Premchand,Tagore,A,Kalidasa is associated with Shakuntala in Indian literature.
+ILU-024,Indian Literature,Which author is associated with the work 'Mudrarakshasa'?,Bhasa,Kalidasa,Premchand,Tagore,A,Bhasa is associated with Mudrarakshasa in Indian literature.
+ILU-025,Indian Literature,Which author is associated with the work 'Malati Madhava'?,Bhavabhuti,Kalidasa,Premchand,Tagore,A,Bhavabhuti is associated with Malati Madhava in Indian literature.
+ILU-026,Indian Literature,Which author is associated with the work 'Dohe'?,Kabir,Kalidasa,Premchand,Tagore,A,Kabir is associated with Dohe in Indian literature.
+ILU-027,Indian Literature,Which author is associated with the work 'Ramcharitmanas'?,Tulsidas,Kalidasa,Premchand,Tagore,A,Tulsidas is associated with Ramcharitmanas in Indian literature.
+ILU-028,Indian Literature,Which author is associated with the work 'Bhajans'?,Mirabai,Kalidasa,Premchand,Tagore,A,Mirabai is associated with Bhajans in Indian literature.
+ILU-029,Indian Literature,Which author is associated with the work 'Sursagar'?,Surdas,Kalidasa,Premchand,Tagore,A,Surdas is associated with Sursagar in Indian literature.
+ILU-030,Indian Literature,Which author is associated with the work 'Life Divine'?,Aurobindo,Kalidasa,Premchand,Tagore,A,Aurobindo is associated with Life Divine in Indian literature.
+ILU-031,Indian Literature,Which author is associated with the work 'Gitanjali'?,Tagore,Kalidasa,Premchand,Tagore,A,Tagore is associated with Gitanjali in Indian literature.
+ILU-032,Indian Literature,Which author is associated with the work 'Godaan'?,Premchand,Kalidasa,Premchand,Tagore,A,Premchand is associated with Godaan in Indian literature.
+ILU-033,Indian Literature,Which author is associated with the work 'Shakuntala'?,Kalidasa,Kalidasa,Premchand,Tagore,A,Kalidasa is associated with Shakuntala in Indian literature.
+ILU-034,Indian Literature,Which author is associated with the work 'Mudrarakshasa'?,Bhasa,Kalidasa,Premchand,Tagore,A,Bhasa is associated with Mudrarakshasa in Indian literature.
+ILU-035,Indian Literature,Which author is associated with the work 'Malati Madhava'?,Bhavabhuti,Kalidasa,Premchand,Tagore,A,Bhavabhuti is associated with Malati Madhava in Indian literature.
+ILU-036,Indian Literature,Which author is associated with the work 'Dohe'?,Kabir,Kalidasa,Premchand,Tagore,A,Kabir is associated with Dohe in Indian literature.
+ILU-037,Indian Literature,Which author is associated with the work 'Ramcharitmanas'?,Tulsidas,Kalidasa,Premchand,Tagore,A,Tulsidas is associated with Ramcharitmanas in Indian literature.
+ILU-038,Indian Literature,Which author is associated with the work 'Bhajans'?,Mirabai,Kalidasa,Premchand,Tagore,A,Mirabai is associated with Bhajans in Indian literature.
+ILU-039,Indian Literature,Which author is associated with the work 'Sursagar'?,Surdas,Kalidasa,Premchand,Tagore,A,Surdas is associated with Sursagar in Indian literature.
+ILU-040,Indian Literature,Which author is associated with the work 'Life Divine'?,Aurobindo,Kalidasa,Premchand,Tagore,A,Aurobindo is associated with Life Divine in Indian literature.
+ILU-041,Indian Literature,Which author is associated with the work 'Gitanjali'?,Tagore,Kalidasa,Premchand,Tagore,A,Tagore is associated with Gitanjali in Indian literature.
+ILU-042,Indian Literature,Which author is associated with the work 'Godaan'?,Premchand,Kalidasa,Premchand,Tagore,A,Premchand is associated with Godaan in Indian literature.
+ILU-043,Indian Literature,Which author is associated with the work 'Shakuntala'?,Kalidasa,Kalidasa,Premchand,Tagore,A,Kalidasa is associated with Shakuntala in Indian literature.
+ILU-044,Indian Literature,Which author is associated with the work 'Mudrarakshasa'?,Bhasa,Kalidasa,Premchand,Tagore,A,Bhasa is associated with Mudrarakshasa in Indian literature.
+ILU-045,Indian Literature,Which author is associated with the work 'Malati Madhava'?,Bhavabhuti,Kalidasa,Premchand,Tagore,A,Bhavabhuti is associated with Malati Madhava in Indian literature.
+ILU-046,Indian Literature,Which author is associated with the work 'Dohe'?,Kabir,Kalidasa,Premchand,Tagore,A,Kabir is associated with Dohe in Indian literature.
+ILU-047,Indian Literature,Which author is associated with the work 'Ramcharitmanas'?,Tulsidas,Kalidasa,Premchand,Tagore,A,Tulsidas is associated with Ramcharitmanas in Indian literature.
+ILU-048,Indian Literature,Which author is associated with the work 'Bhajans'?,Mirabai,Kalidasa,Premchand,Tagore,A,Mirabai is associated with Bhajans in Indian literature.
+ILU-049,Indian Literature,Which author is associated with the work 'Sursagar'?,Surdas,Kalidasa,Premchand,Tagore,A,Surdas is associated with Sursagar in Indian literature.
+ILU-050,Indian Literature,Which author is associated with the work 'Life Divine'?,Aurobindo,Kalidasa,Premchand,Tagore,A,Aurobindo is associated with Life Divine in Indian literature.
+ILU-051,Indian Literature,Which author is associated with the work 'Gitanjali'?,Tagore,Kalidasa,Premchand,Tagore,A,Tagore is associated with Gitanjali in Indian literature.
+ILU-052,Indian Literature,Which author is associated with the work 'Godaan'?,Premchand,Kalidasa,Premchand,Tagore,A,Premchand is associated with Godaan in Indian literature.
+ILU-053,Indian Literature,Which author is associated with the work 'Shakuntala'?,Kalidasa,Kalidasa,Premchand,Tagore,A,Kalidasa is associated with Shakuntala in Indian literature.
+ILU-054,Indian Literature,Which author is associated with the work 'Mudrarakshasa'?,Bhasa,Kalidasa,Premchand,Tagore,A,Bhasa is associated with Mudrarakshasa in Indian literature.
+ILU-055,Indian Literature,Which author is associated with the work 'Malati Madhava'?,Bhavabhuti,Kalidasa,Premchand,Tagore,A,Bhavabhuti is associated with Malati Madhava in Indian literature.
+ILU-056,Indian Literature,Which author is associated with the work 'Dohe'?,Kabir,Kalidasa,Premchand,Tagore,A,Kabir is associated with Dohe in Indian literature.
+ILU-057,Indian Literature,Which author is associated with the work 'Ramcharitmanas'?,Tulsidas,Kalidasa,Premchand,Tagore,A,Tulsidas is associated with Ramcharitmanas in Indian literature.
+ILU-058,Indian Literature,Which author is associated with the work 'Bhajans'?,Mirabai,Kalidasa,Premchand,Tagore,A,Mirabai is associated with Bhajans in Indian literature.
+ILU-059,Indian Literature,Which author is associated with the work 'Sursagar'?,Surdas,Kalidasa,Premchand,Tagore,A,Surdas is associated with Sursagar in Indian literature.
+ILU-060,Indian Literature,Which author is associated with the work 'Life Divine'?,Aurobindo,Kalidasa,Premchand,Tagore,A,Aurobindo is associated with Life Divine in Indian literature.
+ILU-061,Indian Literature,Which author is associated with the work 'Gitanjali'?,Tagore,Kalidasa,Premchand,Tagore,A,Tagore is associated with Gitanjali in Indian literature.
+ILU-062,Indian Literature,Which author is associated with the work 'Godaan'?,Premchand,Kalidasa,Premchand,Tagore,A,Premchand is associated with Godaan in Indian literature.
+ILU-063,Indian Literature,Which author is associated with the work 'Shakuntala'?,Kalidasa,Kalidasa,Premchand,Tagore,A,Kalidasa is associated with Shakuntala in Indian literature.
+ILU-064,Indian Literature,Which author is associated with the work 'Mudrarakshasa'?,Bhasa,Kalidasa,Premchand,Tagore,A,Bhasa is associated with Mudrarakshasa in Indian literature.
+ILU-065,Indian Literature,Which author is associated with the work 'Malati Madhava'?,Bhavabhuti,Kalidasa,Premchand,Tagore,A,Bhavabhuti is associated with Malati Madhava in Indian literature.
+ILU-066,Indian Literature,Which author is associated with the work 'Dohe'?,Kabir,Kalidasa,Premchand,Tagore,A,Kabir is associated with Dohe in Indian literature.
+ILU-067,Indian Literature,Which author is associated with the work 'Ramcharitmanas'?,Tulsidas,Kalidasa,Premchand,Tagore,A,Tulsidas is associated with Ramcharitmanas in Indian literature.
+ILU-068,Indian Literature,Which author is associated with the work 'Bhajans'?,Mirabai,Kalidasa,Premchand,Tagore,A,Mirabai is associated with Bhajans in Indian literature.
+ILU-069,Indian Literature,Which author is associated with the work 'Sursagar'?,Surdas,Kalidasa,Premchand,Tagore,A,Surdas is associated with Sursagar in Indian literature.
+ILU-070,Indian Literature,Which author is associated with the work 'Life Divine'?,Aurobindo,Kalidasa,Premchand,Tagore,A,Aurobindo is associated with Life Divine in Indian literature.
+ILU-071,Indian Literature,Which author is associated with the work 'Gitanjali'?,Tagore,Kalidasa,Premchand,Tagore,A,Tagore is associated with Gitanjali in Indian literature.
+ILU-072,Indian Literature,Which author is associated with the work 'Godaan'?,Premchand,Kalidasa,Premchand,Tagore,A,Premchand is associated with Godaan in Indian literature.
+ILU-073,Indian Literature,Which author is associated with the work 'Shakuntala'?,Kalidasa,Kalidasa,Premchand,Tagore,A,Kalidasa is associated with Shakuntala in Indian literature.
+ILU-074,Indian Literature,Which author is associated with the work 'Mudrarakshasa'?,Bhasa,Kalidasa,Premchand,Tagore,A,Bhasa is associated with Mudrarakshasa in Indian literature.
+ILU-075,Indian Literature,Which author is associated with the work 'Malati Madhava'?,Bhavabhuti,Kalidasa,Premchand,Tagore,A,Bhavabhuti is associated with Malati Madhava in Indian literature.
+ILU-076,Indian Literature,Which author is associated with the work 'Dohe'?,Kabir,Kalidasa,Premchand,Tagore,A,Kabir is associated with Dohe in Indian literature.
+ILU-077,Indian Literature,Which author is associated with the work 'Ramcharitmanas'?,Tulsidas,Kalidasa,Premchand,Tagore,A,Tulsidas is associated with Ramcharitmanas in Indian literature.
+ILU-078,Indian Literature,Which author is associated with the work 'Bhajans'?,Mirabai,Kalidasa,Premchand,Tagore,A,Mirabai is associated with Bhajans in Indian literature.
+ILU-079,Indian Literature,Which author is associated with the work 'Sursagar'?,Surdas,Kalidasa,Premchand,Tagore,A,Surdas is associated with Sursagar in Indian literature.
+ILU-080,Indian Literature,Which author is associated with the work 'Life Divine'?,Aurobindo,Kalidasa,Premchand,Tagore,A,Aurobindo is associated with Life Divine in Indian literature.
+ILU-081,Indian Literature,Which author is associated with the work 'Gitanjali'?,Tagore,Kalidasa,Premchand,Tagore,A,Tagore is associated with Gitanjali in Indian literature.
+ILU-082,Indian Literature,Which author is associated with the work 'Godaan'?,Premchand,Kalidasa,Premchand,Tagore,A,Premchand is associated with Godaan in Indian literature.
+ILU-083,Indian Literature,Which author is associated with the work 'Shakuntala'?,Kalidasa,Kalidasa,Premchand,Tagore,A,Kalidasa is associated with Shakuntala in Indian literature.
+ILU-084,Indian Literature,Which author is associated with the work 'Mudrarakshasa'?,Bhasa,Kalidasa,Premchand,Tagore,A,Bhasa is associated with Mudrarakshasa in Indian literature.
+ILU-085,Indian Literature,Which author is associated with the work 'Malati Madhava'?,Bhavabhuti,Kalidasa,Premchand,Tagore,A,Bhavabhuti is associated with Malati Madhava in Indian literature.
+ILU-086,Indian Literature,Which author is associated with the work 'Dohe'?,Kabir,Kalidasa,Premchand,Tagore,A,Kabir is associated with Dohe in Indian literature.
+ILU-087,Indian Literature,Which author is associated with the work 'Ramcharitmanas'?,Tulsidas,Kalidasa,Premchand,Tagore,A,Tulsidas is associated with Ramcharitmanas in Indian literature.
+ILU-088,Indian Literature,Which author is associated with the work 'Bhajans'?,Mirabai,Kalidasa,Premchand,Tagore,A,Mirabai is associated with Bhajans in Indian literature.
+ILU-089,Indian Literature,Which author is associated with the work 'Sursagar'?,Surdas,Kalidasa,Premchand,Tagore,A,Surdas is associated with Sursagar in Indian literature.
+ILU-090,Indian Literature,Which author is associated with the work 'Life Divine'?,Aurobindo,Kalidasa,Premchand,Tagore,A,Aurobindo is associated with Life Divine in Indian literature.
+ILU-091,Indian Literature,Which author is associated with the work 'Gitanjali'?,Tagore,Kalidasa,Premchand,Tagore,A,Tagore is associated with Gitanjali in Indian literature.
+ILU-092,Indian Literature,Which author is associated with the work 'Godaan'?,Premchand,Kalidasa,Premchand,Tagore,A,Premchand is associated with Godaan in Indian literature.
+ILU-093,Indian Literature,Which author is associated with the work 'Shakuntala'?,Kalidasa,Kalidasa,Premchand,Tagore,A,Kalidasa is associated with Shakuntala in Indian literature.
+ILU-094,Indian Literature,Which author is associated with the work 'Mudrarakshasa'?,Bhasa,Kalidasa,Premchand,Tagore,A,Bhasa is associated with Mudrarakshasa in Indian literature.
+ILU-095,Indian Literature,Which author is associated with the work 'Malati Madhava'?,Bhavabhuti,Kalidasa,Premchand,Tagore,A,Bhavabhuti is associated with Malati Madhava in Indian literature.
+ILU-096,Indian Literature,Which author is associated with the work 'Dohe'?,Kabir,Kalidasa,Premchand,Tagore,A,Kabir is associated with Dohe in Indian literature.
+ILU-097,Indian Literature,Which author is associated with the work 'Ramcharitmanas'?,Tulsidas,Kalidasa,Premchand,Tagore,A,Tulsidas is associated with Ramcharitmanas in Indian literature.
+ILU-098,Indian Literature,Which author is associated with the work 'Bhajans'?,Mirabai,Kalidasa,Premchand,Tagore,A,Mirabai is associated with Bhajans in Indian literature.
+ILU-099,Indian Literature,Which author is associated with the work 'Sursagar'?,Surdas,Kalidasa,Premchand,Tagore,A,Surdas is associated with Sursagar in Indian literature.
+ILU-100,Indian Literature,Which author is associated with the work 'Life Divine'?,Aurobindo,Kalidasa,Premchand,Tagore,A,Aurobindo is associated with Life Divine in Indian literature.
