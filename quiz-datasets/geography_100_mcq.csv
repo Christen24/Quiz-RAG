@@ -1,0 +1,101 @@
+id,domain,question,option_A,option_B,option_C,option_D,answer,explanation
+GEOU-001,Geography,Which is the largest continent?,Asia,Africa,Europe,Australia,A,Asia is the largest continent by area.
+GEOU-002,Geography,Which is the smallest continent?,Australia,Europe,Antarctica,South America,A,Australia is the smallest continent.
+GEOU-003,Geography,Which ocean is the largest?,Atlantic,Indian,Pacific,Arctic,C,The Pacific Ocean is the largest.
+GEOU-004,Geography,Which is the longest river?,Amazon,Nile,Yangtze,Mississippi,B,The Nile is traditionally considered the longest.
+GEOU-005,Geography,Which desert is the largest hot desert?,Gobi,Sahara,Kalahari,Arabian,B,The Sahara is the largest hot desert.
+GEOU-006,Geography,Which country has the highest population?,India,China,USA,Indonesia,A,India currently has the highest population.
+GEOU-007,Geography,What is the capital of India?,Mumbai,New Delhi,Chennai,Kolkata,B,New Delhi is India's capital.
+GEOU-008,Geography,Which mountain is the highest?,K2,Kangchenjunga,Everest,Makalu,C,Mount Everest is the highest above sea level.
+GEOU-009,Geography,Which line divides Earth into hemispheres?,Prime Meridian,Equator,Tropic of Cancer,Arctic Circle,B,The Equator divides Earth into north and south.
+GEOU-010,Geography,Which country is known as Land of Rising Sun?,China,Japan,Korea,Thailand,B,Japan is called Land of Rising Sun.
+GEOU-011,Geography,Which continent is Antarctica?,Hot,Cold,Desert,Forest,B,Antarctica is the coldest continent.
+GEOU-012,Geography,Which river flows through Egypt?,Amazon,Nile,Yangtze,Ganga,B,The Nile flows through Egypt.
+GEOU-013,Geography,Which ocean lies between Africa and Australia?,Pacific,Atlantic,Indian,Arctic,C,The Indian Ocean lies between them.
+GEOU-014,Geography,Which is the capital of USA?,New York,Washington DC,Chicago,Boston,B,Washington DC is the capital.
+GEOU-015,Geography,Which country has the Amazon rainforest?,India,Brazil,China,Australia,B,Brazil hosts most of the Amazon rainforest.
+GEOU-016,Geography,Which is the largest island?,Greenland,Madagascar,Borneo,Sumatra,A,Greenland is the largest island.
+GEOU-017,Geography,Which country is famous for pyramids?,India,Egypt,Mexico,Peru,B,Egypt is known for pyramids.
+GEOU-018,Geography,Which is the smallest country?,Monaco,Vatican City,Maldives,San Marino,B,Vatican City is the smallest.
+GEOU-019,Geography,Which river is in India?,Nile,Amazon,Ganga,Mississippi,C,Ganga is a major Indian river.
+GEOU-020,Geography,Which plateau is highest in world?,Deccan,Tibetan,Colorado,Patagonian,B,The Tibetan Plateau is the highest.
+GEOU-021,Geography,Which continent has most countries?,Asia,Africa,Europe,South America,B,Africa has the most countries.
+GEOU-022,Geography,Which country is called Land of Thunder Dragon?,Bhutan,Nepal,Sri Lanka,Thailand,A,Bhutan is known by that name.
+GEOU-023,Geography,Which is the largest country by area?,USA,China,Russia,Canada,C,Russia is the largest country.
+GEOU-024,Geography,Which ocean is smallest?,Atlantic,Indian,Arctic,Pacific,C,The Arctic Ocean is the smallest.
+GEOU-025,Geography,Which mountain range is in India?,Andes,Alps,Himalayas,Rockies,C,The Himalayas are in India.
+GEOU-026,Geography,Identify: Which is a peninsula?,India,China,Russia,Canada,A,India is a peninsula.
+GEOU-027,Geography,Choose correctly: Which country is landlocked?,Nepal,India,Australia,Japan,A,Nepal has no sea coast.
+GEOU-028,Geography,"In geography, Which is a volcano?",Everest,Kilimanjaro,K2,Denali,B,Kilimanjaro is a volcanic mountain.
+GEOU-029,Geography,Which is a delta river?,Ganga,Amazon,Nile,All,D,All form deltas.
+GEOU-030,Geography,Identify: Which region is coldest?,Sahara,Arctic,Amazon,India,B,Arctic is extremely cold.
+GEOU-031,Geography,Choose correctly: Which city is known as Pink City?,Delhi,Jaipur,Agra,Udaipur,B,Jaipur is called Pink City.
+GEOU-032,Geography,"In geography, Which river is longest in India?",Yamuna,Ganga,Godavari,Krishna,B,Ganga is longest in India.
+GEOU-033,Geography,Which country is in Europe?,India,France,Brazil,Japan,B,France is in Europe.
+GEOU-034,Geography,Identify: Which desert is in India?,Sahara,Gobi,Thar,Arabian,C,Thar Desert is in India.
+GEOU-035,Geography,Choose correctly: Which ocean touches India?,Atlantic,Indian,Pacific,Arctic,B,India borders the Indian Ocean.
+GEOU-036,Geography,"In geography, Which is a peninsula?",India,China,Russia,Canada,A,India is a peninsula.
+GEOU-037,Geography,Which country is landlocked?,Nepal,India,Australia,Japan,A,Nepal has no sea coast.
+GEOU-038,Geography,Identify: Which is a volcano?,Everest,Kilimanjaro,K2,Denali,B,Kilimanjaro is a volcanic mountain.
+GEOU-039,Geography,Choose correctly: Which is a delta river?,Ganga,Amazon,Nile,All,D,All form deltas.
+GEOU-040,Geography,"In geography, Which region is coldest?",Sahara,Arctic,Amazon,India,B,Arctic is extremely cold.
+GEOU-041,Geography,Which city is known as Pink City?,Delhi,Jaipur,Agra,Udaipur,B,Jaipur is called Pink City.
+GEOU-042,Geography,Identify: Which river is longest in India?,Yamuna,Ganga,Godavari,Krishna,B,Ganga is longest in India.
+GEOU-043,Geography,Choose correctly: Which country is in Europe?,India,France,Brazil,Japan,B,France is in Europe.
+GEOU-044,Geography,"In geography, Which desert is in India?",Sahara,Gobi,Thar,Arabian,C,Thar Desert is in India.
+GEOU-045,Geography,Which ocean touches India?,Atlantic,Indian,Pacific,Arctic,B,India borders the Indian Ocean.
+GEOU-046,Geography,Identify: Which is a peninsula?,India,China,Russia,Canada,A,India is a peninsula.
+GEOU-047,Geography,Choose correctly: Which country is landlocked?,Nepal,India,Australia,Japan,A,Nepal has no sea coast.
+GEOU-048,Geography,"In geography, Which is a volcano?",Everest,Kilimanjaro,K2,Denali,B,Kilimanjaro is a volcanic mountain.
+GEOU-049,Geography,Which is a delta river?,Ganga,Amazon,Nile,All,D,All form deltas.
+GEOU-050,Geography,Identify: Which region is coldest?,Sahara,Arctic,Amazon,India,B,Arctic is extremely cold.
+GEOU-051,Geography,Choose correctly: Which city is known as Pink City?,Delhi,Jaipur,Agra,Udaipur,B,Jaipur is called Pink City.
+GEOU-052,Geography,"In geography, Which river is longest in India?",Yamuna,Ganga,Godavari,Krishna,B,Ganga is longest in India.
+GEOU-053,Geography,Which country is in Europe?,India,France,Brazil,Japan,B,France is in Europe.
+GEOU-054,Geography,Identify: Which desert is in India?,Sahara,Gobi,Thar,Arabian,C,Thar Desert is in India.
+GEOU-055,Geography,Choose correctly: Which ocean touches India?,Atlantic,Indian,Pacific,Arctic,B,India borders the Indian Ocean.
+GEOU-056,Geography,"In geography, Which is a peninsula?",India,China,Russia,Canada,A,India is a peninsula.
+GEOU-057,Geography,Which country is landlocked?,Nepal,India,Australia,Japan,A,Nepal has no sea coast.
+GEOU-058,Geography,Identify: Which is a volcano?,Everest,Kilimanjaro,K2,Denali,B,Kilimanjaro is a volcanic mountain.
+GEOU-059,Geography,Choose correctly: Which is a delta river?,Ganga,Amazon,Nile,All,D,All form deltas.
+GEOU-060,Geography,"In geography, Which region is coldest?",Sahara,Arctic,Amazon,India,B,Arctic is extremely cold.
+GEOU-061,Geography,Which city is known as Pink City?,Delhi,Jaipur,Agra,Udaipur,B,Jaipur is called Pink City.
+GEOU-062,Geography,Identify: Which river is longest in India?,Yamuna,Ganga,Godavari,Krishna,B,Ganga is longest in India.
+GEOU-063,Geography,Choose correctly: Which country is in Europe?,India,France,Brazil,Japan,B,France is in Europe.
+GEOU-064,Geography,"In geography, Which desert is in India?",Sahara,Gobi,Thar,Arabian,C,Thar Desert is in India.
+GEOU-065,Geography,Which ocean touches India?,Atlantic,Indian,Pacific,Arctic,B,India borders the Indian Ocean.
+GEOU-066,Geography,Identify: Which is a peninsula?,India,China,Russia,Canada,A,India is a peninsula.
+GEOU-067,Geography,Choose correctly: Which country is landlocked?,Nepal,India,Australia,Japan,A,Nepal has no sea coast.
+GEOU-068,Geography,"In geography, Which is a volcano?",Everest,Kilimanjaro,K2,Denali,B,Kilimanjaro is a volcanic mountain.
+GEOU-069,Geography,Which is a delta river?,Ganga,Amazon,Nile,All,D,All form deltas.
+GEOU-070,Geography,Identify: Which region is coldest?,Sahara,Arctic,Amazon,India,B,Arctic is extremely cold.
+GEOU-071,Geography,Choose correctly: Which city is known as Pink City?,Delhi,Jaipur,Agra,Udaipur,B,Jaipur is called Pink City.
+GEOU-072,Geography,"In geography, Which river is longest in India?",Yamuna,Ganga,Godavari,Krishna,B,Ganga is longest in India.
+GEOU-073,Geography,Which country is in Europe?,India,France,Brazil,Japan,B,France is in Europe.
+GEOU-074,Geography,Identify: Which desert is in India?,Sahara,Gobi,Thar,Arabian,C,Thar Desert is in India.
+GEOU-075,Geography,Choose correctly: Which ocean touches India?,Atlantic,Indian,Pacific,Arctic,B,India borders the Indian Ocean.
+GEOU-076,Geography,"In geography, Which is a peninsula?",India,China,Russia,Canada,A,India is a peninsula.
+GEOU-077,Geography,Which country is landlocked?,Nepal,India,Australia,Japan,A,Nepal has no sea coast.
+GEOU-078,Geography,Identify: Which is a volcano?,Everest,Kilimanjaro,K2,Denali,B,Kilimanjaro is a volcanic mountain.
+GEOU-079,Geography,Choose correctly: Which is a delta river?,Ganga,Amazon,Nile,All,D,All form deltas.
+GEOU-080,Geography,"In geography, Which region is coldest?",Sahara,Arctic,Amazon,India,B,Arctic is extremely cold.
+GEOU-081,Geography,Which city is known as Pink City?,Delhi,Jaipur,Agra,Udaipur,B,Jaipur is called Pink City.
+GEOU-082,Geography,Identify: Which river is longest in India?,Yamuna,Ganga,Godavari,Krishna,B,Ganga is longest in India.
+GEOU-083,Geography,Choose correctly: Which country is in Europe?,India,France,Brazil,Japan,B,France is in Europe.
+GEOU-084,Geography,"In geography, Which desert is in India?",Sahara,Gobi,Thar,Arabian,C,Thar Desert is in India.
+GEOU-085,Geography,Which ocean touches India?,Atlantic,Indian,Pacific,Arctic,B,India borders the Indian Ocean.
+GEOU-086,Geography,Identify: Which is a peninsula?,India,China,Russia,Canada,A,India is a peninsula.
+GEOU-087,Geography,Choose correctly: Which country is landlocked?,Nepal,India,Australia,Japan,A,Nepal has no sea coast.
+GEOU-088,Geography,"In geography, Which is a volcano?",Everest,Kilimanjaro,K2,Denali,B,Kilimanjaro is a volcanic mountain.
+GEOU-089,Geography,Which is a delta river?,Ganga,Amazon,Nile,All,D,All form deltas.
+GEOU-090,Geography,Identify: Which region is coldest?,Sahara,Arctic,Amazon,India,B,Arctic is extremely cold.
+GEOU-091,Geography,Choose correctly: Which city is known as Pink City?,Delhi,Jaipur,Agra,Udaipur,B,Jaipur is called Pink City.
+GEOU-092,Geography,"In geography, Which river is longest in India?",Yamuna,Ganga,Godavari,Krishna,B,Ganga is longest in India.
+GEOU-093,Geography,Which country is in Europe?,India,France,Brazil,Japan,B,France is in Europe.
+GEOU-094,Geography,Identify: Which desert is in India?,Sahara,Gobi,Thar,Arabian,C,Thar Desert is in India.
+GEOU-095,Geography,Choose correctly: Which ocean touches India?,Atlantic,Indian,Pacific,Arctic,B,India borders the Indian Ocean.
+GEOU-096,Geography,"In geography, Which is a peninsula?",India,China,Russia,Canada,A,India is a peninsula.
+GEOU-097,Geography,Which country is landlocked?,Nepal,India,Australia,Japan,A,Nepal has no sea coast.
+GEOU-098,Geography,Identify: Which is a volcano?,Everest,Kilimanjaro,K2,Denali,B,Kilimanjaro is a volcanic mountain.
+GEOU-099,Geography,Choose correctly: Which is a delta river?,Ganga,Amazon,Nile,All,D,All form deltas.
+GEOU-100,Geography,"In geography, Which region is coldest?",Sahara,Arctic,Amazon,India,B,Arctic is extremely cold.
