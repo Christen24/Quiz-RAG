@@ -1,0 +1,101 @@
+id,domain,question,option_A,option_B,option_C,option_D,answer,explanation
+GSU-001,General Science,What is the SI unit of force?,Newton,Joule,Watt,Pascal,A,Force is measured in Newton (N).
+GSU-002,General Science,What is the chemical formula of water?,H2O,CO2,O2,NaCl,A,Water consists of two hydrogen and one oxygen atom.
+GSU-003,General Science,Which organ pumps blood in the human body?,Liver,Brain,Heart,Lungs,C,The heart circulates blood throughout the body.
+GSU-004,General Science,Which gas do plants absorb for photosynthesis?,Oxygen,Nitrogen,Carbon dioxide,Hydrogen,C,Plants use CO2 to make food.
+GSU-005,General Science,What is the boiling point of water?,50°C,100°C,0°C,212°C,B,Water boils at 100°C at standard pressure.
+GSU-006,General Science,Which vitamin is produced by sunlight?,Vitamin A,Vitamin B,Vitamin C,Vitamin D,D,Sunlight helps synthesize Vitamin D.
+GSU-007,General Science,What is the speed of light?,3×10^8 m/s,300 m/s,1500 m/s,1×10^6 m/s,A,Light travels at ~3×10^8 m/s in vacuum.
+GSU-008,General Science,Which part of cell contains DNA?,Nucleus,Cytoplasm,Membrane,Ribosome,A,DNA is stored in the nucleus.
+GSU-009,General Science,Which metal is liquid at room temperature?,Iron,Mercury,Copper,Aluminium,B,Mercury is liquid at room temperature.
+GSU-010,General Science,Which force keeps planets in orbit?,Magnetic,Friction,Gravity,Electric,C,Gravity keeps planets orbiting stars.
+GSU-011,General Science,What is pH scale used for?,Speed,Acidity,Mass,Energy,B,pH measures acidity/alkalinity.
+GSU-012,General Science,Which organ helps in breathing?,Heart,Lungs,Kidney,Liver,B,Lungs exchange oxygen and carbon dioxide.
+GSU-013,General Science,What is the largest organ in the human body?,Brain,Skin,Liver,Heart,B,Skin is the largest organ.
+GSU-014,General Science,Which particle has negative charge?,Proton,Neutron,Electron,Photon,C,Electrons carry negative charge.
+GSU-015,General Science,Which planet has the most gravity?,Earth,Mars,Jupiter,Venus,C,Jupiter has the strongest gravity among planets.
+GSU-016,General Science,What is evaporation?,Liquid to gas,Gas to liquid,Solid to liquid,Liquid to solid,A,Evaporation is liquid turning into vapor.
+GSU-017,General Science,Which vitamin prevents scurvy?,A,B,C,D,C,Vitamin C prevents scurvy.
+GSU-018,General Science,Which blood cells fight infection?,RBC,WBC,Platelets,Plasma,B,White blood cells defend the body.
+GSU-019,General Science,What is the main gas in air?,Oxygen,Nitrogen,Carbon dioxide,Hydrogen,B,Nitrogen forms ~78% of air.
+GSU-020,General Science,What is energy?,Ability to do work,Mass,Speed,Force,A,Energy is the capacity to do work.
+GSU-021,General Science,Which organ filters blood?,Heart,Kidney,Lungs,Liver,B,Kidneys filter waste from blood.
+GSU-022,General Science,What is density?,Mass/volume,Force,Energy,Speed,A,Density = mass divided by volume.
+GSU-023,General Science,Which acid is in stomach?,HCl,H2SO4,HNO3,CH3COOH,A,Hydrochloric acid aids digestion.
+GSU-024,General Science,Which instrument measures temperature?,Barometer,Thermometer,Hygrometer,Voltmeter,B,Thermometers measure temperature.
+GSU-025,General Science,What is friction?,Push,Resistance to motion,Energy,Speed,B,Friction opposes motion between surfaces.
+GSU-026,General Science,Identify: Which system controls body?,Digestive,Nervous,Circulatory,Respiratory,B,Nervous system controls actions.
+GSU-027,General Science,Choose the correct statement: What is voltage?,Current,Potential difference,Resistance,Power,B,Voltage is potential difference.
+GSU-028,General Science,"In basic science, Which planet is known as blue planet?",Mars,Earth,Jupiter,Venus,B,Earth appears blue due to water.
+GSU-029,General Science,What is conduction?,Heat transfer through contact,Radiation,Convection,Motion,A,Conduction transfers heat via contact.
+GSU-030,General Science,Identify: Which is a greenhouse gas?,Oxygen,Nitrogen,CO2,Helium,C,CO2 traps heat in atmosphere.
+GSU-031,General Science,Choose the correct statement: Which organ produces insulin?,Liver,Pancreas,Kidney,Heart,B,Pancreas secretes insulin.
+GSU-032,General Science,"In basic science, What is photosynthesis?",Making food using sunlight,Breathing,Digestion,Circulation,A,Plants make food using sunlight.
+GSU-033,General Science,Which wave carries sound?,Light,Mechanical,Radio,X-ray,B,Sound travels as mechanical waves.
+GSU-034,General Science,Identify: Which is a renewable resource?,Coal,Petroleum,Solar energy,Natural gas,C,Solar energy is renewable.
+GSU-035,General Science,Choose the correct statement: What is magnetism?,Force of attraction,Heat,Light,Sound,A,Magnetism causes attraction/repulsion.
+GSU-036,General Science,"In basic science, Which blood group is universal donor?",A,B,AB,O,D,O negative is universal donor.
+GSU-037,General Science,Which part of plant makes food?,Root,Stem,Leaf,Flower,C,Leaves perform photosynthesis.
+GSU-038,General Science,Identify: What is inertia?,Resistance to change,Force,Speed,Energy,A,Inertia resists change in motion.
+GSU-039,General Science,Choose the correct statement: Which gas supports combustion?,CO2,O2,N2,H2,B,Oxygen supports burning.
+GSU-040,General Science,"In basic science, What is a solution?",Mixture,Pure substance,Element,Compound,A,Solution is a homogeneous mixture.
+GSU-041,General Science,Which system controls body?,Digestive,Nervous,Circulatory,Respiratory,B,Nervous system controls actions.
+GSU-042,General Science,Identify: What is voltage?,Current,Potential difference,Resistance,Power,B,Voltage is potential difference.
+GSU-043,General Science,Choose the correct statement: Which planet is known as blue planet?,Mars,Earth,Jupiter,Venus,B,Earth appears blue due to water.
+GSU-044,General Science,"In basic science, What is conduction?",Heat transfer through contact,Radiation,Convection,Motion,A,Conduction transfers heat via contact.
+GSU-045,General Science,Which is a greenhouse gas?,Oxygen,Nitrogen,CO2,Helium,C,CO2 traps heat in atmosphere.
+GSU-046,General Science,Identify: Which organ produces insulin?,Liver,Pancreas,Kidney,Heart,B,Pancreas secretes insulin.
+GSU-047,General Science,Choose the correct statement: What is photosynthesis?,Making food using sunlight,Breathing,Digestion,Circulation,A,Plants make food using sunlight.
+GSU-048,General Science,"In basic science, Which wave carries sound?",Light,Mechanical,Radio,X-ray,B,Sound travels as mechanical waves.
+GSU-049,General Science,Which is a renewable resource?,Coal,Petroleum,Solar energy,Natural gas,C,Solar energy is renewable.
+GSU-050,General Science,Identify: What is magnetism?,Force of attraction,Heat,Light,Sound,A,Magnetism causes attraction/repulsion.
+GSU-051,General Science,Choose the correct statement: Which blood group is universal donor?,A,B,AB,O,D,O negative is universal donor.
+GSU-052,General Science,"In basic science, Which part of plant makes food?",Root,Stem,Leaf,Flower,C,Leaves perform photosynthesis.
+GSU-053,General Science,What is inertia?,Resistance to change,Force,Speed,Energy,A,Inertia resists change in motion.
+GSU-054,General Science,Identify: Which gas supports combustion?,CO2,O2,N2,H2,B,Oxygen supports burning.
+GSU-055,General Science,Choose the correct statement: What is a solution?,Mixture,Pure substance,Element,Compound,A,Solution is a homogeneous mixture.
+GSU-056,General Science,"In basic science, Which system controls body?",Digestive,Nervous,Circulatory,Respiratory,B,Nervous system controls actions.
+GSU-057,General Science,What is voltage?,Current,Potential difference,Resistance,Power,B,Voltage is potential difference.
+GSU-058,General Science,Identify: Which planet is known as blue planet?,Mars,Earth,Jupiter,Venus,B,Earth appears blue due to water.
+GSU-059,General Science,Choose the correct statement: What is conduction?,Heat transfer through contact,Radiation,Convection,Motion,A,Conduction transfers heat via contact.
+GSU-060,General Science,"In basic science, Which is a greenhouse gas?",Oxygen,Nitrogen,CO2,Helium,C,CO2 traps heat in atmosphere.
+GSU-061,General Science,Which organ produces insulin?,Liver,Pancreas,Kidney,Heart,B,Pancreas secretes insulin.
+GSU-062,General Science,Identify: What is photosynthesis?,Making food using sunlight,Breathing,Digestion,Circulation,A,Plants make food using sunlight.
+GSU-063,General Science,Choose the correct statement: Which wave carries sound?,Light,Mechanical,Radio,X-ray,B,Sound travels as mechanical waves.
+GSU-064,General Science,"In basic science, Which is a renewable resource?",Coal,Petroleum,Solar energy,Natural gas,C,Solar energy is renewable.
+GSU-065,General Science,What is magnetism?,Force of attraction,Heat,Light,Sound,A,Magnetism causes attraction/repulsion.
+GSU-066,General Science,Identify: Which blood group is universal donor?,A,B,AB,O,D,O negative is universal donor.
+GSU-067,General Science,Choose the correct statement: Which part of plant makes food?,Root,Stem,Leaf,Flower,C,Leaves perform photosynthesis.
+GSU-068,General Science,"In basic science, What is inertia?",Resistance to change,Force,Speed,Energy,A,Inertia resists change in motion.
+GSU-069,General Science,Which gas supports combustion?,CO2,O2,N2,H2,B,Oxygen supports burning.
+GSU-070,General Science,Identify: What is a solution?,Mixture,Pure substance,Element,Compound,A,Solution is a homogeneous mixture.
+GSU-071,General Science,Choose the correct statement: Which system controls body?,Digestive,Nervous,Circulatory,Respiratory,B,Nervous system controls actions.
+GSU-072,General Science,"In basic science, What is voltage?",Current,Potential difference,Resistance,Power,B,Voltage is potential difference.
+GSU-073,General Science,Which planet is known as blue planet?,Mars,Earth,Jupiter,Venus,B,Earth appears blue due to water.
+GSU-074,General Science,Identify: What is conduction?,Heat transfer through contact,Radiation,Convection,Motion,A,Conduction transfers heat via contact.
+GSU-075,General Science,Choose the correct statement: Which is a greenhouse gas?,Oxygen,Nitrogen,CO2,Helium,C,CO2 traps heat in atmosphere.
+GSU-076,General Science,"In basic science, Which organ produces insulin?",Liver,Pancreas,Kidney,Heart,B,Pancreas secretes insulin.
+GSU-077,General Science,What is photosynthesis?,Making food using sunlight,Breathing,Digestion,Circulation,A,Plants make food using sunlight.
+GSU-078,General Science,Identify: Which wave carries sound?,Light,Mechanical,Radio,X-ray,B,Sound travels as mechanical waves.
+GSU-079,General Science,Choose the correct statement: Which is a renewable resource?,Coal,Petroleum,Solar energy,Natural gas,C,Solar energy is renewable.
+GSU-080,General Science,"In basic science, What is magnetism?",Force of attraction,Heat,Light,Sound,A,Magnetism causes attraction/repulsion.
+GSU-081,General Science,Which blood group is universal donor?,A,B,AB,O,D,O negative is universal donor.
+GSU-082,General Science,Identify: Which part of plant makes food?,Root,Stem,Leaf,Flower,C,Leaves perform photosynthesis.
+GSU-083,General Science,Choose the correct statement: What is inertia?,Resistance to change,Force,Speed,Energy,A,Inertia resists change in motion.
+GSU-084,General Science,"In basic science, Which gas supports combustion?",CO2,O2,N2,H2,B,Oxygen supports burning.
+GSU-085,General Science,What is a solution?,Mixture,Pure substance,Element,Compound,A,Solution is a homogeneous mixture.
+GSU-086,General Science,Identify: Which system controls body?,Digestive,Nervous,Circulatory,Respiratory,B,Nervous system controls actions.
+GSU-087,General Science,Choose the correct statement: What is voltage?,Current,Potential difference,Resistance,Power,B,Voltage is potential difference.
+GSU-088,General Science,"In basic science, Which planet is known as blue planet?",Mars,Earth,Jupiter,Venus,B,Earth appears blue due to water.
+GSU-089,General Science,What is conduction?,Heat transfer through contact,Radiation,Convection,Motion,A,Conduction transfers heat via contact.
+GSU-090,General Science,Identify: Which is a greenhouse gas?,Oxygen,Nitrogen,CO2,Helium,C,CO2 traps heat in atmosphere.
+GSU-091,General Science,Choose the correct statement: Which organ produces insulin?,Liver,Pancreas,Kidney,Heart,B,Pancreas secretes insulin.
+GSU-092,General Science,"In basic science, What is photosynthesis?",Making food using sunlight,Breathing,Digestion,Circulation,A,Plants make food using sunlight.
+GSU-093,General Science,Which wave carries sound?,Light,Mechanical,Radio,X-ray,B,Sound travels as mechanical waves.
+GSU-094,General Science,Identify: Which is a renewable resource?,Coal,Petroleum,Solar energy,Natural gas,C,Solar energy is renewable.
+GSU-095,General Science,Choose the correct statement: What is magnetism?,Force of attraction,Heat,Light,Sound,A,Magnetism causes attraction/repulsion.
+GSU-096,General Science,"In basic science, Which blood group is universal donor?",A,B,AB,O,D,O negative is universal donor.
+GSU-097,General Science,Which part of plant makes food?,Root,Stem,Leaf,Flower,C,Leaves perform photosynthesis.
+GSU-098,General Science,Identify: What is inertia?,Resistance to change,Force,Speed,Energy,A,Inertia resists change in motion.
+GSU-099,General Science,Choose the correct statement: Which gas supports combustion?,CO2,O2,N2,H2,B,Oxygen supports burning.
+GSU-100,General Science,"In basic science, What is a solution?",Mixture,Pure substance,Element,Compound,A,Solution is a homogeneous mixture.
