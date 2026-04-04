@@ -9181,5 +9181,785 @@
     "explanation_context": "Gravity is fundamental in space science as it governs motion of celestial bodies.",
     "source": "space_cosmology_unique_100.json",
     "page": "N/A"
+  },
+  {
+    "id": "ai_01_dup2",
+    "genre": "ai_systems",
+    "question": "What is the main goal of an AI system?",
+    "options": [
+      "To follow only fixed, hard-coded rules",
+      "To mimic human intelligence and make useful decisions from data",
+      "To replace all computer programs",
+      "To work only without human supervision"
+    ],
+    "correct_answer": "To mimic human intelligence and make useful decisions from data",
+    "explanation_context": "An AI system is designed to simulate aspects of human intel"
+  },
+  {
+    "id": "ai_02_dup2",
+    "genre": "ai_systems",
+    "question": "Which of these is the best example of a narrow AI system?",
+    "options": [
+      "A robot that can feel emotions like a human",
+      "A virtual assistant that sets reminders and answers simple questions",
+      "A computer that understands every human language perfectly",
+      "A machine that can perform any task better than humans"
+    ],
+    "correct_answer": "A virtual assistant that sets reminders and answers simple questions",
+    "explanation_context": "Narrow AI systems are built to perform specific tasks such"
+  },
+  {
+    "id": "ai_03",
+    "genre": "ai_systems",
+    "question": "What is a common way AI systems learn patterns from data?",
+    "options": [
+      "By randomly guessing until it is correct",
+      "By using machine learning algorithms on labeled or unlabeled data",
+      "By copying code from other programs",
+      "By running without any data at all"
+    ],
+    "correct_answer": "By using machine learning algorithms on labeled or unlabeled data",
+    "explanation_context": "Machine learning algorithms allow AI systems to automatical"
+  },
+  {
+    "id": "ai_04",
+    "genre": "ai_systems",
+    "question": "Which scenario best shows AI being used in everyday life?",
+    "options": [
+      "A purely mechanical clock",
+      "An online store recommending products you might like",
+      "A simple calculator doing addition",
+      "A light bulb turning on with a switch"
+    ],
+    "correct_answer": "An online store recommending products you might like",
+    "explanation_context": "Recommendation systems use AI models to analyze your past"
+  },
+  {
+    "id": "ai_05",
+    "genre": "ai_systems",
+    "question": "Why is training data so important for an AI model?",
+    "options": [
+      "It makes the user interface look nicer",
+      "It determines how fast the hardware runs",
+      "It shapes what patterns the model learns and how well it generalizes",
+      "It decides how many users can log in"
+    ],
+    "correct_answer": "It shapes what patterns the model learns and how well it generalizes",
+    "explanation_context": "Training data provides examples from which the AI model le"
+  },
+  {
+    "id": "ai_06",
+    "genre": "ai_systems",
+    "question": "Which of the following is a risk when an AI system is trained on biase",
+    "options": [
+      "It will always run slower",
+      "It may reproduce and amplify unfair or discriminatory patterns",
+      "It will never improve its accuracy",
+      "It will stop using machine learning"
+    ],
+    "correct_answer": "It may reproduce and amplify unfair or discriminatory patterns",
+    "explanation_context": "If the data used to train an AI system contains historical b"
+  },
+  {
+    "id": "ai_07",
+    "genre": "ai_systems",
+    "question": "What does it mean when an AI system works with \\\"varying levels of aut",
+    "options": [
+      "It always needs human approval for every action",
+      "It can only operate when fully disconnected from humans",
+      "It may act on its own in some situations but still allow human control or oversi",
+      "It has no defined objective"
+    ],
+    "correct_answer": "It may act on its own in some situations but still allow human control or oversi",
+    "explanation_context": "Modern definitions of AI systems describe them as machine-"
+  },
+  {
+    "id": "ai_08",
+    "genre": "ai_systems",
+    "question": "Which device is a good example of \\\"edge AI\\\"?",
+    "options": [
+      "A supercomputer in a remote data center",
+      "A smartphone camera that automatically enhances photos in real time",
+      "A traditional desktop printer",
+      "A basic landline telephone"
+    ],
+    "correct_answer": "A smartphone camera that automatically enhances photos in real time",
+    "explanation_context": "Edge AI refers to AI models that run directly on devices su"
+  },
+  {
+    "id": "ai_09",
+    "genre": "ai_systems",
+    "question": "Why are chatbots considered AI systems?",
+    "options": [
+      "They are made of metal and plastic",
+      "They always require an internet connection",
+      "They use natural language processing models to understand and generate text",
+      "They can only answer yes or no questions"
+    ],
+    "correct_answer": "They use natural language processing models to understand and generate text",
+    "explanation_context": "Chatbots rely on AI techniques like natural language proces"
+  },
+  {
+    "id": "ai_10",
+    "genre": "ai_systems",
+    "question": "What is the main difference between traditional rule-based software a",
+    "options": [
+      "Rule-based software never uses any data",
+      "AI systems infer patterns from data instead of relying only on fixed rules",
+      "AI systems cannot be deployed on the cloud",
+      "Rule-based software is always more accurate"
+    ],
+    "correct_answer": "AI systems infer patterns from data instead of relying only on fixed rules",
+    "explanation_context": "Traditional rule-based software encodes human-written rule"
+  },
+  {
+    "id": "wh_01",
+    "genre": "world_history",
+    "question": "Which ancient region is often called the \\\"cradle of civilization\\\"?",
+    "options": [
+      "Mesopotamia between the Tigris and Euphrates rivers",
+      "The Arctic Circle",
+      "The Australian Outback",
+      "The Sahara Desert"
+    ],
+    "correct_answer": "Mesopotamia between the Tigris and Euphrates rivers",
+    "explanation_context": "Early complex societies with writing, cities, and organize"
+  },
+  {
+    "id": "wh_02",
+    "genre": "world_history",
+    "question": "The Indus Valley Civilization flourished in the area of which modern",
+    "options": [
+      "India and Pakistan",
+      "Spain and Portugal",
+      "Canada and the United States",
+      "China and Japan"
+    ],
+    "correct_answer": "India and Pakistan",
+    "explanation_context": "Archaeological sites like Harappa and Mohenjo-daro show tha"
+  },
+  {
+    "id": "wh_03",
+    "genre": "world_history",
+    "question": "The Great Pyramid at Giza was built in which ancient civilization?",
+    "options": [
+      "Ancient Egypt",
+      "Ancient Greece",
+      "Ancient China",
+      "The Maya Civilization"
+    ],
+    "correct_answer": "Ancient Egypt",
+    "explanation_context": "The Great Pyramid at Giza, constructed as a tomb for the p"
+  },
+  {
+    "id": "wh_04",
+    "genre": "world_history",
+    "question": "Which city became the heart of the Roman Empire?",
+    "options": [
+      "Rome",
+      "Athens",
+      "Alexandria",
+      "Babylon"
+    ],
+    "correct_answer": "Rome",
+    "explanation_context": "The Roman Empire grew from the city-state of Rome on the I"
+  },
+  {
+    "id": "wh_05",
+    "genre": "world_history",
+    "question": "What was the primary purpose of the Silk Road?",
+    "options": [
+      "To serve as a pilgrimage route only",
+      "To connect ancient cities with underground tunnels",
+      "To facilitate trade and cultural exchange between East and West",
+      "To mark the borders of the Roman Empire"
+    ],
+    "correct_answer": "To facilitate trade and cultural exchange between East and West",
+    "explanation_context": "The Silk Road was a network of overland and maritime route"
+  },
+  {
+    "id": "wh_06",
+    "genre": "world_history",
+    "question": "Who is credited with introducing the movable-type printing press to E",
+    "options": [
+      "Johannes Gutenberg",
+      "Leonardo da Vinci",
+      "Marco Polo",
+      "Charlemagne"
+    ],
+    "correct_answer": "Johannes Gutenberg",
+    "explanation_context": "Johannes Gutenberg developed a metal movable-type printing"
+  },
+  {
+    "id": "wh_07",
+    "genre": "world_history",
+    "question": "In which country did the Industrial Revolution first take off in the l",
+    "options": [
+      "Great Britain",
+      "India",
+      "Brazil",
+      "Japan"
+    ],
+    "correct_answer": "Great Britain",
+    "explanation_context": "The Industrial Revolution began in Great Britain, where inv"
+  },
+  {
+    "id": "wh_08",
+    "genre": "world_history",
+    "question": "Which event is widely seen as the immediate trigger for World War I i",
+    "options": [
+      "The storming of the Bastille",
+      "The assassination of Archduke Franz Ferdinand in Sarajevo",
+      "The signing of the Magna Carta",
+      "The fall of Constantinople"
+    ],
+    "correct_answer": "The assassination of Archduke Franz Ferdinand in Sarajevo",
+    "explanation_context": "World War I erupted after Archduke Franz Ferdinand of Austr"
+  },
+  {
+    "id": "wh_09",
+    "genre": "world_history",
+    "question": "The Magna Carta, an important document limiting royal power, was issu",
+    "options": [
+      "England",
+      "France",
+      "Russia",
+      "China"
+    ],
+    "correct_answer": "England",
+    "explanation_context": "In 1215, English barons forced King John to seal the Magna"
+  },
+  {
+    "id": "wh_10",
+    "genre": "world_history",
+    "question": "The European Renaissance, a period of renewed interest in art and lea",
+    "options": [
+      "Northern Italy",
+      "Scandinavia",
+      "Sub-Saharan Africa",
+      "Central America"
+    ],
+    "correct_answer": "Northern Italy",
+    "explanation_context": "The Renaissance began in the city-states of northern Italy"
+  },
+  {
+    "id": "il_01",
+    "genre": "indian_literature",
+    "question": "In which ancient language were the Vedas, some of the earliest Indian",
+    "options": [
+      "Sanskrit",
+      "Tamil",
+      "Persian",
+      "Pali"
+    ],
+    "correct_answer": "Sanskrit",
+    "explanation_context": "The Vedas are a collection of sacred hymns and rituals that"
+  },
+  {
+    "id": "il_02",
+    "genre": "indian_literature",
+    "question": "Which two great Sanskrit epics shaped much of Indian storytelling and",
+    "options": [
+      "Ramayana and Mahabharata",
+      "Rigveda and Yajurveda",
+      "Gitanjali and God of Small Things",
+      "Panchatantra and Hitopadesha"
+    ],
+    "correct_answer": "Ramayana and Mahabharata",
+    "explanation_context": "The Ramayana and the Mahabharata are long narrative poems t"
+  },
+  {
+    "id": "il_03",
+    "genre": "indian_literature",
+    "question": "Who wrote \\\"Gitanjali\\\", the collection of poems that won the Nobel P",
+    "options": [
+      "Rabindranath Tagore",
+      "Bankim Chandra Chattopadhyay",
+      "Mulk Raj Anand",
+      "Kiran Desai"
+    ],
+    "correct_answer": "Rabindranath Tagore",
+    "explanation_context": "Rabindranath Tagore, a Bengali poet, philosopher, and comp"
+  },
+  {
+    "id": "il_04",
+    "genre": "indian_literature",
+    "question": "Kalidasa, often called one of India’s greatest classical poets, wrote",
+    "options": [
+      "Classical Sanskrit drama and poetry",
+      "Modern Hindi short stories",
+      "Urdu ghazals",
+      "English novels"
+    ],
+    "correct_answer": "Classical Sanskrit drama and poetry",
+    "explanation_context": "Kalidasa is celebrated for works like Abhijnanasakuntalam a"
+  },
+  {
+    "id": "il_05",
+    "genre": "indian_literature",
+    "question": "Sangam literature, one of the oldest bodies of secular poetry in Indi",
+    "options": [
+      "Tamil",
+      "Gujarati",
+      "Assamese",
+      "Marathi"
+    ],
+    "correct_answer": "Tamil",
+    "explanation_context": "Sangam literature refers to ancient Tamil poems composed"
+  },
+  {
+    "id": "il_06",
+    "genre": "indian_literature",
+    "question": "The Panchatantra is best described as which type of work?",
+    "options": [
+      "A collection of animal fables teaching moral lessons",
+      "An astronomical treatise",
+      "A historical chronicle of kings",
+      "A devotional hymnbook"
+    ],
+    "correct_answer": "A collection of animal fables teaching moral lessons",
+    "explanation_context": "The Panchatantra is a set of interlinked animal stories in"
+  },
+  {
+    "id": "il_07",
+    "genre": "indian_literature",
+    "question": "Munshi Premchand is most famous for writing in which Indian language?",
+    "options": [
+      "Hindi",
+      "Konkani",
+      "Sanskrit",
+      "Sindhi"
+    ],
+    "correct_answer": "Hindi",
+    "explanation_context": "Premchand is widely known for his Hindi short stories and"
+  },
+  {
+    "id": "il_08",
+    "genre": "indian_literature",
+    "question": "Which modern Indian English novel by Arundhati Roy won the Booker Pri",
+    "options": [
+      "The God of Small Things",
+      "Midnight’s Children",
+      "A Suitable Boy",
+      "Train to Pakistan"
+    ],
+    "correct_answer": "The God of Small Things",
+    "explanation_context": "Arundhati Roy’s debut novel The God of Small Things explor"
+  },
+  {
+    "id": "il_09",
+    "genre": "indian_literature",
+    "question": "Kabir, a major poet of the Bhakti movement, is known for writing in w",
+    "options": [
+      "Simple, devotional verses that questioned ritualism",
+      "Highly technical court chronicles in Persian",
+      "Epic Sanskrit dramas",
+      "Long English blank-verse poems"
+    ],
+    "correct_answer": "Simple, devotional verses that questioned ritualism",
+    "explanation_context": "Kabir composed dohas and songs in simple language that emp"
+  },
+  {
+    "id": "il_10",
+    "genre": "indian_literature",
+    "question": "Which category best describes Indian literature as a whole?",
+    "options": [
+      "A multilingual tradition spanning thousands of years",
+      "Only ancient religious hymns in one language",
+      "Only modern English novels after 1947",
+      "A single epic preserved in oral form"
+    ],
+    "correct_answer": "A multilingual tradition spanning thousands of years",
+    "explanation_context": "Indian literature includes works in many languages such as"
+  },
+  {
+    "id": "sc_01",
+    "genre": "space_cosmology",
+    "question": "What is at the center of our solar system?",
+    "options": [
+      "The Earth",
+      "The Moon",
+      "The Sun",
+      "The Milky Way"
+    ],
+    "correct_answer": "The Sun",
+    "explanation_context": "The solar system is a gravitationally bound system in which"
+  },
+  {
+    "id": "sc_02",
+    "genre": "space_cosmology",
+    "question": "How many major planets are officially recognized in our solar system",
+    "options": [
+      "Seven",
+      "Eight",
+      "Nine",
+      "Ten"
+    ],
+    "correct_answer": "Eight",
+    "explanation_context": "Astronomers currently recognize eight major planets: Mercu"
+  },
+  {
+    "id": "sc_03",
+    "genre": "space_cosmology",
+    "question": "Which planet is often called the \\\"Red Planet\\\"?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+    ],
+    "correct_answer": "Mars",
+    "explanation_context": "Mars is known as the Red Planet because its surface is rich"
+  },
+  {
+    "id": "sc_04",
+    "genre": "space_cosmology",
+    "question": "What is a light-year a measure of?",
+    "options": [
+      "Time taken by Earth to orbit the Sun",
+      "The brightness of a star",
+      "Distance that light travels in one year",
+      "The mass of a galaxy"
+    ],
+    "correct_answer": "Distance that light travels in one year",
+    "explanation_context": "A light-year is a distance unit equal to how far light trave"
+  },
+  {
+    "id": "sc_05",
+    "genre": "space_cosmology",
+    "question": "What is the name of the galaxy that contains our solar system?",
+    "options": [
+      "Andromeda Galaxy",
+      "Whirlpool Galaxy",
+      "Milky Way Galaxy",
+      "Sombrero Galaxy"
+    ],
+    "correct_answer": "Milky Way Galaxy",
+    "explanation_context": "Our solar system lies within the Milky Way, a barred spiral"
+  },
+  {
+    "id": "sc_06",
+    "genre": "space_cosmology",
+    "question": "Which giant planet is famous for its prominent ring system visible fr",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune"
+    ],
+    "correct_answer": "Saturn",
+    "explanation_context": "All giant planets have rings, but Saturn’s rings are especi"
+  },
+  {
+    "id": "sc_07",
+    "genre": "space_cosmology",
+    "question": "What do scientists call the event that marks the beginning of the obse",
+    "options": [
+      "The Big Bang",
+      "The Great Flood",
+      "The Ice Age",
+      "The Dark Era"
+    ],
+    "correct_answer": "The Big Bang",
+    "explanation_context": "According to the Big Bang theory, the universe expanded fr"
+  },
+  {
+    "id": "sc_08",
+    "genre": "space_cosmology",
+    "question": "Which force keeps planets in orbit around the Sun?",
+    "options": [
+      "Magnetism",
+      "Friction",
+      "Gravity",
+      "Electricity"
+    ],
+    "correct_answer": "Gravity",
+    "explanation_context": "Gravity is the attractive force between masses, and the Sun"
+  },
+  {
+    "id": "sc_09",
+    "genre": "space_cosmology",
+    "question": "What is a galaxy?",
+    "options": [
+      "A small rock in space",
+      "A giant cloud of only gas",
+      "A huge collection of stars, gas, dust, and dark matter",
+      "A single star with one planet"
+    ],
+    "correct_answer": "A huge collection of stars, gas, dust, and dark matter",
+    "explanation_context": "Galaxies are vast systems bound together by gravity, contai"
+  },
+  {
+    "id": "sc_10",
+    "genre": "space_cosmology",
+    "question": "Compared to the size of the universe, our solar system is best descri",
+    "options": [
+      "An enormous structure bigger than most galaxies",
+      "A tiny part within a galaxy among billions of galaxies",
+      "Half the size of the universe",
+      "Exactly the same size as the Milky Way"
+    ],
+    "correct_answer": "A tiny part within a galaxy among billions of galaxies",
+    "explanation_context": "Our solar system occupies a small region of the Milky Way G"
+  },
+  {
+    "id": "gs_01",
+    "genre": "general_science",
+    "question": "What is the process by which green plants make their own food using su",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Fermentation",
+      "Evaporation"
+    ],
+    "correct_answer": "Photosynthesis",
+    "explanation_context": "In photosynthesis, plants use chlorophyll to capture light"
+  },
+  {
+    "id": "gs_02",
+    "genre": "general_science",
+    "question": "What do we call the force that pulls objects toward the center of the",
+    "options": [
+      "Magnetism",
+      "Electricity",
+      "Gravity",
+      "Friction"
+    ],
+    "correct_answer": "Gravity",
+    "explanation_context": "Gravity is the attractive force between masses, and on Eart"
+  },
+  {
+    "id": "gs_03",
+    "genre": "general_science",
+    "question": "At what temperature does pure water boil at standard atmospheric pres",
+    "options": [
+      "0 degrees Celsius",
+      "50 degrees Celsius",
+      "100 degrees Celsius",
+      "150 degrees Celsius"
+    ],
+    "correct_answer": "100 degrees Celsius",
+    "explanation_context": "Under standard atmospheric pressure at sea level, pure wat"
+  },
+  {
+    "id": "gs_04",
+    "genre": "general_science",
+    "question": "Which organ is primarily responsible for pumping blood throughout th",
+    "options": [
+      "Lungs",
+      "Brain",
+      "Heart",
+      "Liver"
+    ],
+    "correct_answer": "Heart",
+    "explanation_context": "The heart is a muscular organ that contracts rhythmically to"
+  },
+  {
+    "id": "gs_05",
+    "genre": "general_science",
+    "question": "Which part of a plant mainly absorbs water and minerals from the soil",
+    "options": [
+      "Leaves",
+      "Roots",
+      "Flowers",
+      "Seeds"
+    ],
+    "correct_answer": "Roots",
+    "explanation_context": "Roots spread through the soil and have fine root hairs that"
+  },
+  {
+    "id": "gs_06",
+    "genre": "general_science",
+    "question": "Which three particles are found in a typical atom?",
+    "options": [
+      "Protons, neutrons, and electrons",
+      "Cells, tissues, and organs",
+      "Ions, molecules, and compounds",
+      "Solids, liquids, and gases"
+    ],
+    "correct_answer": "Protons, neutrons, and electrons",
+    "explanation_context": "Atoms consist of a nucleus containing positively charged pr"
+  },
+  {
+    "id": "gs_07",
+    "genre": "general_science",
+    "question": "What state change occurs when liquid water turns into water vapor?",
+    "options": [
+      "Freezing",
+      "Condensation",
+      "Evaporation",
+      "Sublimation"
+    ],
+    "correct_answer": "Evaporation",
+    "explanation_context": "Evaporation is the process in which liquid molecules gain"
+  },
+  {
+    "id": "gs_08",
+    "genre": "general_science",
+    "question": "Which gas do humans and most animals need to breathe in to stay alive?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Helium"
+    ],
+    "correct_answer": "Oxygen",
+    "explanation_context": "Humans and many animals require oxygen for cellular respir"
+  },
+  {
+    "id": "gs_09",
+    "genre": "general_science",
+    "question": "Which body system is mainly responsible for sending electrical signal",
+    "options": [
+      "Digestive system",
+      "Nervous system",
+      "Skeletal system",
+      "Excretory system"
+    ],
+    "correct_answer": "Nervous system",
+    "explanation_context": "The nervous system, made up of the brain, spinal cord, and"
+  },
+  {
+    "id": "gs_10",
+    "genre": "general_science",
+    "question": "Which materials generally allow electric current to flow easily?",
+    "options": [
+      "Insulators like rubber and glass",
+      "Metals like copper and aluminum",
+      "Dry wood and plastic",
+      "Pure distilled water only"
+    ],
+    "correct_answer": "Metals like copper and aluminum",
+    "explanation_context": "Metals have free electrons that can move through the materi"
+  },
+  {
+    "id": "geo_01_dup2",
+    "genre": "geography",
+    "question": "How many continents are commonly recognized on Earth?",
+    "options": [
+      "Five",
+      "Six",
+      "Seven",
+      "Eight"
+    ],
+    "correct_answer": "Seven",
+    "explanation_context": "Most geographic models describe seven continents: Asia, Af"
+  },
+  {
+    "id": "geo_02_dup2",
+    "genre": "geography",
+    "question": "Which is the largest continent by land area?",
+    "options": [
+      "Africa",
+      "Asia",
+      "North America",
+      "Europe"
+    ],
+    "correct_answer": "Asia",
+    "explanation_context": "Asia covers roughly one-third of Earth’s land surface and i"
+  },
+  {
+    "id": "geo_03",
+    "genre": "geography",
+    "question": "Which ocean is the largest and deepest on Earth?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean",
+      "Pacific Ocean"
+    ],
+    "correct_answer": "Pacific Ocean",
+    "explanation_context": "The Pacific Ocean is the world’s largest ocean, stretching"
+  },
+  {
+    "id": "geo_04",
+    "genre": "geography",
+    "question": "Which mountain is generally recognized as the highest above sea level",
+    "options": [
+      "K2",
+      "Mount Kilimanjaro",
+      "Mount Everest",
+      "Mount Fuji"
+    ],
+    "correct_answer": "Mount Everest",
+    "explanation_context": "Mount Everest, located in the Himalayas on the border betw"
+  },
+  {
+    "id": "geo_05",
+    "genre": "geography",
+    "question": "Which river is commonly taught as the longest river in the world in m",
+    "options": [
+      "Amazon River",
+      "Nile River",
+      "Yangtze River",
+      "Mississippi River"
+    ],
+    "correct_answer": "Nile River",
+    "explanation_context": "Although some modern measurements suggest the Amazon may b"
+  },
+  {
+    "id": "geo_06",
+    "genre": "geography",
+    "question": "What is the capital city of India?",
+    "options": [
+      "Mumbai",
+      "Kolkata",
+      "New Delhi",
+      "Chennai"
+    ],
+    "correct_answer": "New Delhi",
+    "explanation_context": "New Delhi serves as the capital of India and hosts the cent"
+  },
+  {
+    "id": "geo_07",
+    "genre": "geography",
+    "question": "The Sahara, the world’s largest hot desert, is located on which conti",
+    "options": [
+      "Asia",
+      "South America",
+      "Africa",
+      "Australia"
+    ],
+    "correct_answer": "Africa",
+    "explanation_context": "The Sahara Desert covers much of North Africa, stretching a"
+  },
+  {
+    "id": "geo_08",
+    "genre": "geography",
+    "question": "What is the Equator?",
+    "options": [
+      "A line dividing the Eastern and Western Hemispheres",
+      "An imaginary line that circles Earth halfway between the poles",
+      "A physical wall built around the planet",
+      "A narrow ocean current in the Pacific"
+    ],
+    "correct_answer": "An imaginary line that circles Earth halfway between the poles",
+    "explanation_context": "The Equator is an imaginary latitude line at 0 degrees that"
+  },
+  {
+    "id": "geo_09",
+    "genre": "geography",
+    "question": "Which country lies in both Europe and Asia, being a transcontinental n",
+    "options": [
+      "Canada",
+      "Turkey",
+      "Egypt",
+      "Mexico"
+    ],
+    "correct_answer": "Turkey",
+    "explanation_context": "Turkey spans the Bosporus Strait, with a smaller portion i"
+  },
+  {
+    "id": "geo_10",
+    "genre": "geography",
+    "question": "Which description best fits a tropical rainforest climate?",
+    "options": [
+      "Cold all year with very little precipitation",
+      "Hot and dry with very little rainfall",
+      "Warm, with heavy rainfall and dense evergreen vegetation",
+      "Mild temperatures with four distinct seasons and low rainfall"
+    ],
+    "correct_answer": "Warm, with heavy rainfall and dense evergreen vegetation",
+    "explanation_context": "Tropical rainforests occur near the Equator where temperat"
   }
 ]
