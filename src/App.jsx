@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import {
   BookOpenText,
   Brain,
+  CheckCircle,
   CheckCircle2,
   ChevronRight,
   CircleGauge,
@@ -25,49 +26,80 @@ function GenreCard({ genre, active, onClick }) {
 
   return (
     <motion.button
-      whileHover={{ rotateX: -6, rotateY: 6, y: -8, scale: 1.01 }}
+      whileHover={{ y: -5, scale: 1.01 }}
       whileTap={{ scale: 0.98 }}
       onClick={onClick}
-      className={`group relative overflow-hidden rounded-3xl border p-5 text-left transition ${
-        active
-          ? "border-indigo-400/60 bg-white/12 shadow-[0_0_0_1px_rgba(99,102,241,0.35),0_18px_50px_rgba(6,182,212,0.12)]"
-          : "border-white/10 bg-white/[0.06] hover:border-cyan-400/40"
-      }`}
-      style={{ transformStyle: "preserve-3d" }}
+      className={`group relative flex flex-col items-start rounded-3xl border p-6 text-left transition-all duration-500 min-h-[180px] ${active
+          ? "border-indigo-500 bg-indigo-500/10 shadow-[0_0_40px_rgba(99,102,241,0.2)]"
+          : "border-white/10 bg-slate-900/40 backdrop-blur-xl hover:border-indigo-400/30 hover:bg-slate-800/40 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
+        }`}
     >
-      <div className={`absolute inset-0 bg-gradient-to-br ${genre.accent} opacity-20 blur-2xl`} />
-      <div className="relative flex items-start justify-between gap-4">
-        <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-3 text-indigo-300">
-          <Icon className="h-6 w-6" />
+      <div className={`absolute inset-0 bg-gradient-to-br ${genre.accent} opacity-5 blur-3xl`} />
+
+      <div className="relative flex w-full items-start justify-between">
+        <div className={`rounded-xl border p-2.5 transition-colors duration-500 ${active ? "border-indigo-400 bg-indigo-500 text-white" : "border-white/10 bg-white/5 text-slate-300"
+          }`}>
+          <Icon className="h-5 w-5" />
         </div>
+
+        <span className={`rounded-full border px-3 py-1 text-[10px] font-bold uppercase tracking-wider transition-all duration-500 ${active ? "border-indigo-400/50 bg-indigo-500/20 text-indigo-100" : "border-white/10 bg-white/5 text-slate-400"
+          }`}>
+          {genre.difficulty}
+        </span>
       </div>
-      <div className="relative mt-6 space-y-3">
-        <div className="flex items-center justify-between gap-3">
-          <h3 className="text-lg font-semibold text-white">{genre.name}</h3>
-          <span className="rounded-full border border-white/10 bg-white/8 px-3 py-1 text-xs text-slate-200">
-            {genre.difficulty}
-          </span>
-        </div>
-        <p className="max-w-sm text-sm leading-6 text-slate-300">{genre.description}</p>
+
+      <div className="relative mt-auto space-y-2">
+        <h3 className="text-xl font-bold text-white tracking-tight">{genre.name}</h3>
+        <p className="text-sm leading-relaxed text-slate-400 font-medium line-clamp-2">
+          {genre.description}
+        </p>
       </div>
+
+      {active && (
+        <motion.div
+          layoutId="selection-glow"
+          className="absolute -inset-1 rounded-[2.2rem] border-2 border-indigo-500/50 blur-[2px]"
+          transition={{ duration: 0.4 }}
+        />
+      )}
     </motion.button>
   );
 }
 
 function ShimmerInsight() {
   return (
-    <div className="rounded-[28px] border border-white/10 bg-white/[0.05] p-5">
-      <div className="space-y-4 animate-pulse">
+    <div className="relative overflow-hidden rounded-[28px] border border-indigo-500/30 bg-white/[0.02] p-5 shadow-[0_0_15px_rgba(99,102,241,0.15)]">
+      <div className="absolute -inset-[100%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00000000_50%,#818cf8_100%)] opacity-30" />
+      <div className="absolute inset-[1px] rounded-[27px] bg-[#0a0a0b] bg-opacity-90" />
+      <div className="relative z-10 space-y-4 animate-pulse">
         <div className="h-4 w-32 rounded-full bg-white/10" />
-        <div className="h-20 rounded-2xl bg-white/8" />
+        <div className="h-20 rounded-2xl bg-white/5" />
         <div className="h-3 w-24 rounded-full bg-white/10" />
         <div className="grid gap-3 sm:grid-cols-2">
-          <div className="h-20 rounded-2xl bg-white/8" />
-          <div className="h-20 rounded-2xl bg-white/8" />
+          <div className="h-20 rounded-2xl bg-white/5" />
+          <div className="h-20 rounded-2xl bg-white/5" />
         </div>
       </div>
     </div>
   );
+}
+
+function StreamingText({ content, speed = 15 }) {
+  const [displayedText, setDisplayedText] = useState("");
+
+  useEffect(() => {
+    setDisplayedText("");
+    if (!content) return;
+    let i = 0;
+    const interval = setInterval(() => {
+      setDisplayedText((prev) => prev + content.charAt(i));
+      i++;
+      if (i >= content.length) clearInterval(interval);
+    }, speed);
+    return () => clearInterval(interval);
+  }, [content, speed]);
+
+  return <span>{displayedText}</span>;
 }
 
 function InsightPanel({ insight, loading, questionText, genre }) {
@@ -166,7 +198,9 @@ function InsightPanel({ insight, loading, questionText, genre }) {
           <div className="space-y-5">
             <div className="rounded-[24px] border border-white/10 bg-slate-950/50 p-4">
               <p className="text-xs uppercase tracking-[0.25em] text-slate-400">Grounded Explanation</p>
-              <p className="mt-3 text-sm leading-7 text-slate-200">{insight?.groundedExplanation}</p>
+              <p className="mt-3 text-sm leading-7 text-slate-200">
+                <StreamingText content={insight?.groundedExplanation} />
+              </p>
               <div className="mt-4 rounded-2xl border border-white/10 bg-slate-950/60 p-4">
                 <p className="text-xs uppercase tracking-[0.25em] text-slate-400">Ask a Follow-up</p>
                 <p className="mt-2 text-sm text-slate-300">
@@ -283,9 +317,21 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="absolute left-1/2 top-0 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-indigo-500/20 blur-[140px]" />
-        <div className="absolute bottom-0 right-0 h-[22rem] w-[22rem] rounded-full bg-cyan-500/15 blur-[130px]" />
-        <div className="absolute left-0 top-1/3 h-[18rem] w-[18rem] rounded-full bg-fuchsia-500/10 blur-[120px]" />
+        <motion.div
+          animate={{ x: [0, 50, -50, 0], y: [0, 30, -30, 0], scale: [1, 1.1, 0.9, 1] }}
+          transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+          className="absolute left-1/4 top-1/4 h-[35rem] w-[35rem] rounded-full bg-indigo-600/20 blur-[160px]"
+        />
+        <motion.div
+          animate={{ x: [0, -40, 40, 0], y: [0, -40, 40, 0], scale: [1, 0.9, 1.1, 1] }}
+          transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+          className="absolute bottom-1/4 right-1/4 h-[30rem] w-[30rem] rounded-full bg-cyan-600/15 blur-[150px]"
+        />
+        <motion.div
+          animate={{ x: [0, 30, -30, 0], y: [0, -20, 20, 0] }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="absolute left-1/3 bottom-1/3 h-[25rem] w-[25rem] rounded-full bg-fuchsia-600/15 blur-[140px]"
+        />
       </div>
 
       <main className="relative mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 py-5 sm:px-6 lg:px-8 lg:py-8">
@@ -301,9 +347,14 @@ function App() {
                 <img src={answerLogo} alt="Answer Logo" className="h-4 w-4 object-contain" />
                 RAG-Powered Intelligent Quiz Platform
               </div>
-              <h1 className="mt-5 font-['Geist'] text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+                className="mt-5 font-['Geist'] text-4xl font-semibold tracking-tight text-white sm:text-5xl"
+              >
                 Start with the domain. Let the quiz adapt around it.
-              </h1>
+              </motion.h1>
               <p className="mt-4 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
                 The experience is intentionally centered on knowledge-domain selection, then moves into a focused,
                 retrieval-backed quiz flow with grounded explanations after each answer.
@@ -336,23 +387,23 @@ function App() {
           initial="hidden"
           animate="visible"
           transition={{ delay: 0.08 }}
-          className="rounded-[32px] border border-white/10 bg-white/[0.04] p-5 backdrop-blur-2xl sm:p-6"
+          className="rounded-[32px] border border-white/10 bg-white/[0.04] p-6 backdrop-blur-2xl sm:p-10"
         >
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Domain Selection Hub</p>
-              <h2 className="mt-2 text-3xl font-semibold text-white">Choose the knowledge domain first</h2>
+              <p className="text-xs uppercase tracking-[0.4em] text-indigo-400 font-bold">Selection Hub</p>
+              <h2 className="mt-3 text-4xl font-bold text-white tracking-tight">Choose the knowledge domain first</h2>
+              <p className="mt-3 text-slate-400 text-base max-w-xl">
+                Select a domain to initialize the RAG knowledge loop. Your choice determines the grounding sources and AI explanation context.
+              </p>
             </div>
-            <div className="hidden rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 md:block">
-              Domain choice drives the quiz experience
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-300">
+              <span className="h-2 w-2 rounded-full bg-indigo-500 animate-pulse" />
+              Context Aware
             </div>
           </div>
 
-          <div className="mt-3 max-w-3xl text-sm leading-7 text-slate-300">
-            Each domain changes the question set, grounding sources, and explanation context. This is the primary control surface of the product.
-          </div>
-
-          <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-12 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {genres.map((genre) => (
               <GenreCard
                 key={genre.id}
@@ -459,15 +510,14 @@ function App() {
                             key={option}
                             whileHover={quiz.insight ? undefined : { scale: 1.01, y: -2 }}
                             whileTap={quiz.insight ? undefined : { scale: 0.99 }}
-                            className={`flex cursor-pointer items-start gap-4 rounded-[24px] border p-4 transition ${
-                              isCorrect
-                                ? "border-emerald-400/40 bg-emerald-400/10"
-                                : isIncorrectSelected
-                                  ? "border-amber-400/40 bg-amber-400/10"
-                                  : isSelected
-                                    ? "border-indigo-400/50 bg-linear-to-r from-indigo-500/20 to-cyan-400/10 shadow-[0_0_0_1px_rgba(99,102,241,0.25),0_18px_45px_rgba(99,102,241,0.12)]"
-                                    : "border-white/10 bg-slate-950/50 hover:border-cyan-400/30 hover:bg-white/[0.06]"
-                            }`}
+                            className={`flex cursor-pointer items-start gap-4 rounded-[24px] border p-4 transition ${isCorrect
+                              ? "border-emerald-400/40 bg-emerald-400/10"
+                              : isIncorrectSelected
+                                ? "border-amber-400/40 bg-amber-400/10"
+                                : isSelected
+                                  ? "border-indigo-400/50 bg-linear-to-r from-indigo-500/20 to-cyan-400/10 shadow-[0_0_0_1px_rgba(99,102,241,0.25),0_18px_45px_rgba(99,102,241,0.12)]"
+                                  : "border-white/10 bg-slate-950/50 hover:border-cyan-400/30 hover:bg-white/[0.06]"
+                              }`}
                           >
                             <input
                               type="radio"
@@ -478,15 +528,14 @@ function App() {
                               disabled={quiz.isRagLoading || quiz.insight}
                             />
                             <div
-                              className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border text-sm font-semibold ${
-                                isCorrect
-                                  ? "border-emerald-300/40 bg-emerald-400/15 text-emerald-100"
-                                  : isIncorrectSelected
-                                    ? "border-amber-300/40 bg-amber-400/15 text-amber-100"
-                                    : isSelected
-                                      ? "border-indigo-300/40 bg-indigo-400/20 text-indigo-100"
-                                      : "border-white/10 bg-white/5 text-slate-200"
-                              }`}
+                              className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border text-sm font-semibold ${isCorrect
+                                ? "border-emerald-300/40 bg-emerald-400/15 text-emerald-100"
+                                : isIncorrectSelected
+                                  ? "border-amber-300/40 bg-amber-400/15 text-amber-100"
+                                  : isSelected
+                                    ? "border-indigo-300/40 bg-indigo-400/20 text-indigo-100"
+                                    : "border-white/10 bg-white/5 text-slate-200"
+                                }`}
                             >
                               {letter}
                             </div>
