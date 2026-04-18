@@ -1,0 +1,32 @@
+# Secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+.venv/
+venv/
+env/
+
+# Node / Frontend
+node_modules/
+dist/
+.vite/
+node_modules/.vite/
+
+# Local vector database / generated artifacts
+chroma_db/
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+
